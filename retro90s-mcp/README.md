@@ -68,15 +68,40 @@ Each entry across all knowledge files conforms to a strict JSON schema:
 
 ---
 
+## 💡 Core Components & Services
+
+### `KnowledgeItem` (`com.retro90s.mcp.KnowledgeItem`)
+Java 21 record modeling a single retro 90s entry with fields:
+- `id` (String): Unique slug identifier.
+- `title` (String): Human-readable item title.
+- `category` (String): Knowledge domain category.
+- `year` (int): Release or historical year (1990–1999).
+- `manufacturer` (String): Company, creator, or entity.
+- `summary` (String): Concise historical summary.
+- `facts` (List<String>): List of verified historical facts.
+- `related` (List<String>): Identifiers of related items.
+- `keywords` (List<String>): Search tags and aliases.
+
+### `ResourceLoader` (`com.retro90s.mcp.ResourceLoader`)
+Loads classpath resources (`/knowledge/*.json` datasets and `/prompts/personality.md`) using Jackson `ObjectMapper`.
+
+### `KnowledgeService` (`com.retro90s.mcp.KnowledgeService`)
+In-memory dataset index and search provider offering:
+- **Search Query Algorithm**: Multi-tiered search combining exact ID/title/category match, keyword term scoring across all fields, and Levenshtein fuzzy matching for typos.
+- **Lookup Methods**: `findById(String id)`, `findByCategory(String category)`, `findByYear(int year)`, and `getRandomItem()`.
+- **Resource Presets**: `getTimeline()`, `getOperatingSystems()`, `getConsoles()`, `getProgramming()`, `getInternet()`, and `getPersonalityPrompt()`.
+
+---
+
 ## 🛠️ Build & Verification
 
 Requirements:
 - Java 21+
 - Maven 3.8+
 
-### Compile Project
+### Compile & Test Project
 ```bash
-mvn clean compile -f retro90s-mcp/pom.xml
+mvn clean test -f retro90s-mcp/pom.xml
 ```
 
 ---
