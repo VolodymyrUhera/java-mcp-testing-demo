@@ -21,24 +21,45 @@ public class ContactHandler implements HttpHandler {
 
             String responseHtml = """
                 <!DOCTYPE html>
-                <html>
+                <html lang="en">
                 <head>
+                    <meta charset="UTF-8">
                     <title>Message Received! - CyberSpace 1999</title>
                     <link rel="stylesheet" href="/static/style.css">
                 </head>
                 <body>
-                    <table class="main-layout">
-                        <tr>
-                            """ + sidebar + """
-                            <td class="content">
-                                <h1>Electronic Mail Sent!</h1>
-                                <p>Thank you for reaching out! We received your data transmission:</p>
-                                <pre style="background:#eee; padding:10px;">""" + formData + """
-                                </pre>
-                                <a href="/">Return to Home Base</a>
-                            </td>
-                        </tr>
-                    </table>
+                    <a href="#main-content" class="sr-only">Skip to main content</a>
+                    
+                    <div class="banner-marquee" role="region" aria-label="Announcement Marquee">
+                        <marquee behavior="scroll" direction="left">
+                            *** ELECTRONIC MAIL TRANSMISSION RECEIVED! THANK YOU FOR CONTACTING US! ***
+                        </marquee>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="win98-window">
+                        <div class="win98-titlebar"><span>✉️ CyberSpace 1999 - Electronic Mail &amp; Guestbook</span><div class="win98-controls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>X</span></div></div>
+                        
+                        <table class="main-layout">
+                            <tr>
+                                """ + sidebar + """
+                                <td class="content" id="main-content" tabindex="-1">
+                                    <main>
+                                        <h1 class="flaming-header">Electronic Mail Transmitted!</h1>
+                                        
+                                        <div role="status" aria-live="polite">
+                                            <p>Thank you for reaching out! We received your data transmission:</p>
+                                            <pre style="background: #000000; color: #00ff00; padding: 10px; font-family: 'Courier New', monospace; border: 2px inset #c0c0c0;">""" + formData + """
+                                            </pre>
+                                        </div>
+                                        <br>
+                                        <a href="/" class="info-link">&lt;&lt; Return to Home Base</a>
+                                    </main>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </body>
                 </html>
                 """;
@@ -55,56 +76,67 @@ public class ContactHandler implements HttpHandler {
         // GET request - render contact form
         String html = """
             <!DOCTYPE html>
-            <html>
+            <html lang="en">
             <head>
+                <meta charset="UTF-8">
                 <title>Contact Us - CyberSpace 1999</title>
                 <link rel="stylesheet" href="/static/style.css">
             </head>
             <body>
-                <div class="banner-marquee">
+                <a href="#main-content" class="sr-only">Skip to main content</a>
+                
+                <div class="banner-marquee" role="region" aria-label="Announcement Marquee">
                     <marquee behavior="scroll" direction="left">
                         *** SEND US AN ELECTRONIC MAIL MESSAGE OR GUESTBOOK NOTE! ***
                     </marquee>
                 </div>
+                
                 <br>
-                <table class="main-layout">
-                    <tr>
-                        """ + sidebar + """
-                        <td class="content">
-                            <h1>Electronic Mail Transmission Form</h1>
-                            
-                            <h2>Fill out all fields below:</h2>
-                            
-                            <form action="/contact" method="POST" id="contactForm">
-                                <table border="1" cellpadding="5">
-                                    <tr>
-                                        <td><label for="username">Name:</label></td>
-                                        <td>
-                                            <input type="text" id="username" name="username" placeholder="Your Cyber Alias">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="email">Email:</label></td>
-                                        <td>
-                                            <input type="text" id="email" name="email" placeholder="alias@provider.com">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="comments">Comments:</label></td>
-                                        <td>
-                                            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" align="center">
-                                            <input type="submit" id="submitBtn" value="Send E-Mail" class="submit-btn">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </td>
-                    </tr>
-                </table>
+                
+                <div class="win98-window">
+                    <div class="win98-titlebar"><span>✉️ CyberSpace 1999 - Electronic Mail &amp; Guestbook</span><div class="win98-controls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>X</span></div></div>
+                    
+                    <table class="main-layout">
+                        <tr>
+                            """ + sidebar + """
+                            <td class="content" id="main-content" tabindex="-1">
+                                <main>
+                                    <h1 class="flaming-header">Electronic Mail Transmission Form</h1>
+                                    
+                                    <h2>Fill out all fields below:</h2>
+                                    
+                                    <form action="/contact" method="POST" id="contactForm" class="retro-form">
+                                        <table border="1" cellpadding="5">
+                                            <tr>
+                                                <td><label for="username">Name:</label></td>
+                                                <td>
+                                                    <input type="text" id="username" name="username" placeholder="Your Cyber Alias" aria-required="true">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="email">Email:</label></td>
+                                                <td>
+                                                    <input type="text" id="email" name="email" placeholder="alias@provider.com" aria-required="true">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="comments">Comments:</label></td>
+                                                <td>
+                                                    <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Type your message here..." aria-required="true"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <input type="submit" id="submitBtn" value="Send E-Mail" class="submit-btn">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </main>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </body>
             </html>
             """;
@@ -117,3 +149,4 @@ public class ContactHandler implements HttpHandler {
         }
     }
 }
+
