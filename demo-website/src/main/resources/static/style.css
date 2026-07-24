@@ -1,0 +1,90 @@
+/* Retro late-1990s Styling */
+body {
+    background-color: #000080; /* Classic 90s Navy Blue */
+    color: #ffff00; /* Neon Yellow text */
+    font-family: "Comic Sans MS", "Times New Roman", cursive, serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+table.main-layout {
+    width: 95%;
+    border: 5px ridge #ff00ff; /* Magenta bevel border */
+    background-color: #c0c0c0; /* Windows 95 Silver */
+    color: #000000;
+    margin: 0 auto;
+}
+
+td.sidebar {
+    width: 20%;
+    background-color: #008080; /* Teal sidebar */
+    vertical-align: top;
+    padding: 10px;
+}
+
+td.content {
+    width: 80%;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* Intentional UX issue: Poor contrast text */
+.low-contrast-text {
+    color: #a0a0a0; /* Very light gray on white background - Ratio < 2:1 */
+    background-color: #ffffff;
+    font-size: 11px;
+}
+
+/* Intentional UX issue: Tiny click targets */
+.tiny-link {
+    font-size: 7px; /* 7px clickable link - impossible to hit on mobile */
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.banner-marquee {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px dashed #ffff00;
+}
+
+.counter-box {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    border: 2px inset #ffffff;
+}
+
+.award-badge {
+    border: 3px double #ffd700;
+    background-color: #ffffcc;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Confusing Navigation button styling */
+.nav-btn {
+    background-color: #ff00ff;
+    color: #ffffff;
+    padding: 3px 6px;
+    text-decoration: none;
+    border: 2px outset #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tiny-submit-btn {
+    width: 15px;
+    height: 15px;
+    font-size: 6px;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="250" height="120">
+  <rect width="300" height="150" fill="#c0c0c0" stroke="#000080" stroke-width="4"/>
+  <text x="150" y="30" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#000080" text-anchor="middle">CYBERSPACE 1999 TEAM</text>
+  <circle cx="90" cy="70" r="20" fill="#008080"/>
+  <rect x="70" y="90" width="40" height="50" fill="#008080"/>
+  <circle cx="150" cy="65" r="22" fill="#ff00ff"/>
+  <rect x="125" y="87" width="50" height="53" fill="#ff00ff"/>
+  <circle cx="210" cy="70" r="20" fill="#0000ff"/>
+  <rect x="190" y="90" width="40" height="50" fill="#0000ff"/>
+</svg>
