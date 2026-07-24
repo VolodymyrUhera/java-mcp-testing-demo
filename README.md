@@ -21,6 +21,11 @@ A complete, production-grade demonstration project showcasing a **Java 21 Playwr
    - Automated functional, performance, WCAG accessibility, and multi-step UX journey runners using Playwright.
    - Generates structured Markdown reports and visual PNG screenshots in `reports/`.
 
+4. **Render Cloud Deployment & Render MCP Server Integration**
+   - Multi-stage Docker packaging (`Dockerfile`) and Render Blueprint (`render.yaml`) for continuous cloud deployment.
+   - Integration with the Render MCP server (`@niyogi/render-mcp`) in `.mcp.json` for AI-driven deployment monitoring, log streaming, and service management using `RENDER_API_KEY`.
+
+
 ---
 
 ## 📚 Complete Project Documentation
@@ -39,7 +44,7 @@ Full production-grade technical documentation is available in the [`docs/`](docs
 | 💾 [**Database Specification**](docs/database.md) | State model and persistence overview. |
 | 🔌 [**API Reference**](docs/api.md) | HTTP Web Server endpoints and 12 MCP JSON-RPC 2.0 Stdio tool schemas. |
 | 💻 [**Developer Guide**](docs/development.md) | Local setup, Maven build lifecycle (`mvn clean package`), and coding conventions. |
-| 🚀 [**Deployment Guide**](docs/deployment.md) | Packaging fat JARs (`jar-with-dependencies`) and MCP client integration. |
+| 🚀 [**Deployment Guide**](docs/deployment.md) | Packaging fat JARs (`jar-with-dependencies`), Render cloud deployment (`render.yaml`, `Dockerfile`), and Render MCP server integration. |
 | 🧪 [**Testing Framework**](docs/testing.md) | Automated functional, performance, accessibility, and UX journey testing details. |
 | ⚠️ [**Intentional Defects**](docs/intentional_defects.md) | Specification of engineered UX and WCAG accessibility flaws for audit evaluation. |
 | 📋 [**MCP Protocol Examples**](docs/mcp_examples.md) | JSON-RPC 2.0 request and response payload examples for all 12 MCP tools. |
@@ -134,6 +139,19 @@ java -jar mcp-server/target/mcp-server-1.0.0-SNAPSHOT-jar-with-dependencies.jar
 java -jar testing-scenarios/target/testing-scenarios-1.0.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 *This starts the local HTTP server, executes all test suites, outputs markdown reports in `reports/`, captures a UX journey proof screenshot, and gracefully closes.*
+
+### 4. Deploy to Render Cloud & Run Render MCP Server
+
+```bash
+# Set environment variable for Render MCP integration
+export RENDER_API_KEY="rnd_your_render_api_key_here"
+
+# Build and run Docker image locally or deploy to Render via Blueprint (render.yaml)
+docker build -t demo-website .
+docker run -p 8080:8080 demo-website
+```
+*Render automatically builds and hosts the service using `render.yaml`. The `.mcp.json` file configures `@niyogi/render-mcp` alongside `java-playwright-mcp` for client host integration.*
+
 
 ---
 
