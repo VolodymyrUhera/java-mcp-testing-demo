@@ -13,13 +13,16 @@ public class HomeHandler implements HttpHandler {
 
         String html = """
             <!DOCTYPE html>
-            <html>
+            <html lang="en">
             <head>
+                <meta charset="UTF-8">
                 <title>Welcome to CyberSpace 1999 Ultimate Web Home!</title>
                 <link rel="stylesheet" href="/static/style.css">
             </head>
             <body>
-                <div class="banner-marquee">
+                <a href="#main-content" class="sr-only">Skip to main content</a>
+                
+                <div class="banner-marquee" role="region" aria-label="Announcement Marquee">
                     <marquee behavior="scroll" direction="left">
                         *** WELCOME TO MY CYBERSPACE HOME PAGE! BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 AT 800x600 RESOLUTION! ***
                     </marquee>
@@ -27,43 +30,56 @@ public class HomeHandler implements HttpHandler {
                 
                 <br>
                 
-                <table class="main-layout">
-                    <tr>
-                        """ + sidebar + """
-                        <!-- Main Content Area -->
-                        <td class="content">
-                            <!-- Heading Hierarchy: H1 -->
-                            <h1>Welcome to CyberSpace 1999!</h1>
-                            
-                            <!-- Heading Hierarchy: H1 -> H2 -->
-                            <h2>Latest News &amp; Updates (Updated July 1999)</h2>
-                            
-                            <p>
-                                Thank you for visiting my personal corner of the World Wide Web! This site is currently 
-                                under heavy construction as I learn HTML and Web Design.
-                            </p>
-                            
-                            <!-- Under construction banner -->
-                            <center>
-                                <img src="/static/images/under_construction.svg" width="250" height="40" alt="Under Construction Banner">
-                            </center>
-                            
-                            <h2>Featured Highlights</h2>
-                            <p>
-                                Check out our awesome guestbook or send us an electronic mail via our form!
-                            </p>
-                            
-                            <!-- Fake Awards Section -->
-                            <div class="award-badge">
-                                🏆 WINNER OF THE 1999 GOLDEN WEB AWARD 🏆
-                            </div>
-                            
-                            <p>
-                                Need more info? <a href="/about" class="info-link">Click here for more information</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="win98-window">
+                    <div class="win98-titlebar">
+                        <span>🌐 CyberSpace 1999 - Welcome Home!</span>
+                        <div class="win98-controls" aria-hidden="true">
+                            <span>_</span>
+                            <span>&#9633;</span>
+                            <span>X</span>
+                        </div>
+                    </div>
+                    
+                    <table class="main-layout">
+                        <tr>
+                            """ + sidebar + """
+                            <!-- Main Content Area -->
+                            <td class="content" id="main-content" tabindex="-1">
+                                <main>
+                                    <!-- Heading Hierarchy: H1 -->
+                                    <h1 class="flaming-header">Welcome to CyberSpace 1999!</h1>
+                                    
+                                    <!-- Heading Hierarchy: H1 -> H2 -->
+                                    <h2>Latest News &amp; Updates (Updated July 1999)</h2>
+                                    
+                                    <p>
+                                        Thank you for visiting my personal corner of the World Wide Web! This site is currently 
+                                        under heavy construction as I learn HTML and Web Design.
+                                    </p>
+                                    
+                                    <!-- Under construction banner -->
+                                    <center>
+                                        <img src="/static/images/under_construction.svg" width="250" height="40" alt="Site Under Construction Banner">
+                                    </center>
+                                    
+                                    <h2>Featured Highlights</h2>
+                                    <p>
+                                        Check out our awesome guestbook or send us an electronic mail via our form!
+                                    </p>
+                                    
+                                    <!-- Fake Awards Section -->
+                                    <div class="award-badge" role="region" aria-label="Site Awards">
+                                        🏆 WINNER OF THE 1999 GOLDEN WEB AWARD 🏆
+                                    </div>
+                                    
+                                    <p>
+                                        Need more info? <a href="/about" class="info-link">Click here for more information about CyberSpace 1999</a>
+                                    </p>
+                                </main>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </body>
             </html>
             """;
@@ -76,3 +92,4 @@ public class HomeHandler implements HttpHandler {
         }
     }
 }
+
