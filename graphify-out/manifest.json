@@ -280,9 +280,9 @@
     "semantic_hash": "8817faa73a431c1e74f5fdd229637603"
   },
   "docs/test_runner_subagent.md": {
-    "mtime": 1784922708.8670208,
-    "ast_hash": "d75e6f22d1f38d5f4f9b6578ab9e9f25",
-    "semantic_hash": "d75e6f22d1f38d5f4f9b6578ab9e9f25"
+    "mtime": 1784923429.2752204,
+    "ast_hash": "f97a51f2622e32eeace55f5572f880b8",
+    "semantic_hash": "f97a51f2622e32eeace55f5572f880b8"
   },
   "docs/testing.md": {
     "mtime": 1784904019.4928248,
@@ -300,24 +300,24 @@
     "semantic_hash": "c52a53b47e2a54b80646757b2af8325e"
   },
   "testing-scenarios/reports/accessibility_report.md": {
-    "mtime": 1784923300.02615,
+    "mtime": 1784925393.8256187,
     "ast_hash": "fc6fd861076b374acb80597bca87f913",
     "semantic_hash": "fc6fd861076b374acb80597bca87f913"
   },
   "testing-scenarios/reports/functional_report.md": {
-    "mtime": 1784923300.02615,
+    "mtime": 1784925393.8256187,
     "ast_hash": "fc5d89fd0a0d0ece70e86da6dd277805",
     "semantic_hash": "fc5d89fd0a0d0ece70e86da6dd277805"
   },
   "testing-scenarios/reports/performance_report.md": {
-    "mtime": 1784923300.02615,
-    "ast_hash": "df32d0ea65794150bc60ffe5af6093d8",
-    "semantic_hash": "df32d0ea65794150bc60ffe5af6093d8"
+    "mtime": 1784925393.8256187,
+    "ast_hash": "0d25eb221b7ecdd80d13371641003e08",
+    "semantic_hash": "0d25eb221b7ecdd80d13371641003e08"
   },
   "testing-scenarios/reports/ux_journey_report.md": {
-    "mtime": 1784923300.02615,
-    "ast_hash": "64acabd5514e850df09e12064baabff9",
-    "semantic_hash": "64acabd5514e850df09e12064baabff9"
+    "mtime": 1784925393.8256187,
+    "ast_hash": "972ce9575323810d5f66de65858cfad7",
+    "semantic_hash": "972ce9575323810d5f66de65858cfad7"
   },
   "reports/screenshot_2026-07-24_18-15-00.png": {
     "mtime": 1784909705.3175125,
@@ -335,8 +335,58 @@
     "semantic_hash": "af8876535bc94a57de78e35cb443285f"
   },
   "testing-scenarios/reports/ux_journey_screenshot.png": {
-    "mtime": 1784923300.025306,
+    "mtime": 1784925393.8254826,
     "ast_hash": "e7569b2388a2e321684c338e8e5009b8",
     "semantic_hash": "e7569b2388a2e321684c338e8e5009b8"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/AgentMessage.java": {
+    "mtime": 1784925351.85553,
+    "ast_hash": "09518501b663750708fb3b1bd5086cd3",
+    "semantic_hash": "09518501b663750708fb3b1bd5086cd3"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/AgentMessageBus.java": {
+    "mtime": 1784925353.5015337,
+    "ast_hash": "f5bb4e435eb5c128cd024575a2d9c6fd",
+    "semantic_hash": "f5bb4e435eb5c128cd024575a2d9c6fd"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/BaseAgent.java": {
+    "mtime": 1784925355.7345386,
+    "ast_hash": "a7c3aecdef0e607c6636bb40eddecd21",
+    "semantic_hash": "a7c3aecdef0e607c6636bb40eddecd21"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/DefectAnalyzerAgent.java": {
+    "mtime": 1784925360.7165492,
+    "ast_hash": "46f205ab9f9a6afb10b286eaf5aaa250",
+    "semantic_hash": "46f205ab9f9a6afb10b286eaf5aaa250"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/MultiAgentOrchestrator.java": {
+    "mtime": 1784925365.3462749,
+    "ast_hash": "302365f8df969d7774e39358e9823e03",
+    "semantic_hash": "302365f8df969d7774e39358e9823e03"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/ReportAggregatorAgent.java": {
+    "mtime": 1784925363.0875542,
+    "ast_hash": "d7e905cbaa9325ac8199f24115af4973",
+    "semantic_hash": "d7e905cbaa9325ac8199f24115af4973"
+  },
+  "testing-scenarios/src/main/java/com/demo/testing/agent/TestExecutorAgent.java": {
+    "mtime": 1784925358.5485446,
+    "ast_hash": "5e4ec205ceac3ceef4dea4f1e5f29f22",
+    "semantic_hash": "5e4ec205ceac3ceef4dea4f1e5f29f22"
+  },
+  "docs/superpowers/plans/2026-07-24-java-multi-agent-orchestrator.md": {
+    "mtime": 1784925350.1105263,
+    "ast_hash": "f2db65c9ea341d8687fc6149c52e7c06",
+    "semantic_hash": "f2db65c9ea341d8687fc6149c52e7c06"
+  },
+  "docs/superpowers/specs/2026-07-24-java-multi-agent-orchestrator-design.md": {
+    "mtime": 1784925346.1625175,
+    "ast_hash": "561f72d63438d9093996642d4e59e182",
+    "semantic_hash": "561f72d63438d9093996642d4e59e182"
+  },
+  "testing-scenarios/reports/agent_multiagent_summary.md": {
+    "mtime": 1784925396.303624,
+    "ast_hash": "f04870a33842e7fcfab939a99e500359",
+    "semantic_hash": "f04870a33842e7fcfab939a99e500359"
   }
 }
