@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "java-playwright-mcp": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/home/voha/Documents/JiraMCP/mcp-server/target/mcp-server-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+      ]
+    }
+  }
+}

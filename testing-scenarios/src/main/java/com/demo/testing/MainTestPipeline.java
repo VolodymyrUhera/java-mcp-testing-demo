@@ -27,9 +27,12 @@ public class MainTestPipeline {
             server.start();
             LOGGER.info("Server active at " + BASE_URL);
 
-            // 2. Launch Playwright Headless Browser
+            // 2. Launch Playwright Browser (Supports -Dheadless=true/false)
+            boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+            double slowMo = Double.parseDouble(System.getProperty("slowMo", "500"));
+            LOGGER.info("Launching Playwright Browser (Headless: " + headless + ", SlowMo delay: " + slowMo + "ms)...");
             playwright = Playwright.create();
-            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
+            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headless).setSlowMo(slowMo));
             Page page = browser.newPage();
 
             // 3. Execute Functional Tests
