@@ -45,14 +45,29 @@ Redesign the Java-based demo website into an authentic 1997–2001 internet expe
 - `style.css`: Comprehensive retro stylesheet implementing responsive Win98 window styles, 3D buttons, bevels, marquee, counter, marquee animations, and mobile layout rules.
 - SVGs (`/static/images/`): Upgrade/add SVG assets for retro globe, mailbox, under construction banner, team photo, folder icons, netscape badge, IE badge, webring logo.
 
-## 4. Accessibility & Mobile Responsiveness
-- High text-to-background contrast (> 4.5:1 ratio for text content).
-- Full keyboard focus indicators using bright neon outlines.
-- Responsive CSS media queries `@media (max-width: 768px)` so table/window layouts collapse cleanly on mobile screens while maintaining 90s visual look.
+## 4. Accessibility & Assistive Technology (Screen Readers / Keyboard Browsing)
+- **Screen Reader Support (Blind & Low-Vision Users)**:
+  - Add hidden "Skip to main content" link at top of body (`.sr-only` / focused on tab).
+  - Use HTML5 semantic landmarks (`<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>`) around visual table structures using `role` attributes where needed.
+  - Decorative retro elements (flames, background gifs, decorative borders) marked with `aria-hidden="true"`.
+  - All functional images (`globe.svg`, `under_construction.svg`, badges, icons) equipped with clear, descriptive `alt` attributes (e.g., `alt="CyberSpace 1999 3D Globe Logo"`).
+  - Decorative Win98 window control buttons (`[ _ ] [ █ ] [ X ]`) marked with `aria-hidden="true"` so screen readers bypass window chrome decorations.
+- **Form Accessibility**:
+  - Explicit `<label for="...">` associations for all inputs and textareas in `ContactHandler.java`.
+  - Proper ARIA alert/live regions for form submission status.
+- **Keyboard Navigation & Visual Contrast**:
+  - High text-to-background contrast ratio (WCAG AA 4.5:1 minimum on all text content).
+  - Visible, high-contrast retro focus ring (`outline: 3px solid #00ffff; outline-offset: 2px;`) for keyboard Tab navigation on links, buttons, form controls.
+  - Motion control: `@media (prefers-reduced-motion: reduce)` rule to stop marquee scrolling and rotation animations for users sensitive to motion.
 
-## 5. Verification & Testing Criteria
+## 5. Mobile Responsiveness
+- CSS media queries `@media (max-width: 768px)` so table/window layouts collapse cleanly into single-column vertical flow on mobile screens while maintaining 90s visual look.
+
+## 6. Verification & Testing Criteria
 1. Server compiles (`mvn test-compile` or `mvn compile`).
 2. Server runs on `http://localhost:8080`.
 3. All pages (`/`, `/about`, `/contact`, `/links`) render with 1999 Win98/GeoCities look.
-4. Contact POST form submits correctly and renders response page.
-5. Code maintains clean separation between Java backend handlers and CSS/SVG static assets.
+4. Screen reader accessibility verified (semantic tags, landmarks, skip links, alt texts, ARIA hidden chrome).
+5. Contact POST form submits correctly and renders response page.
+6. Code maintains clean separation between Java backend handlers and CSS/SVG static assets.
+
