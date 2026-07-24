@@ -22,10 +22,14 @@ public class MainTestPipeline {
         Browser browser = null;
 
         try {
-            // 1. Launch Demo Web Server
-            server = new DemoWebServer(PORT);
-            server.start();
-            LOGGER.info("Server active at " + BASE_URL);
+            // 1. Launch Demo Web Server (or reuse if already running)
+            try {
+                server = new DemoWebServer(PORT);
+                server.start();
+                LOGGER.info("Server active at " + BASE_URL);
+            } catch (Exception serverException) {
+                LOGGER.warning("DemoWebServer already running or port bound: " + serverException.getMessage() + ". Reusing active server at " + BASE_URL);
+            }
 
             // 2. Launch Playwright Browser (Supports -Dheadless=true/false)
             boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
