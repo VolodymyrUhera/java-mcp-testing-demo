@@ -91,6 +91,14 @@ In-memory dataset index and search provider offering:
 - **Lookup Methods**: `findById(String id)`, `findByCategory(String category)`, `findByYear(int year)`, and `getRandomItem()`.
 - **Resource Presets**: `getTimeline()`, `getOperatingSystems()`, `getConsoles()`, `getProgramming()`, `getInternet()`, and `getPersonalityPrompt()`.
 
+### `SearchService` (`com.retro90s.mcp.SearchService`)
+Online search provider with Wikipedia and DuckDuckGo fallback capabilities using Java 21 `HttpClient`:
+- **Wikipedia REST API Integration**: Queries `https://en.wikipedia.org/api/rest_v1/page/summary/{query}` for summaries, facts, and metadata.
+- **DuckDuckGo Instant Answer Integration**: Fallback queries `https://api.duckduckgo.com/?q={query}&format=json` for abstract text and related topics.
+- **Synthesized Knowledge Items**: Converts raw API JSON into fully-typed `KnowledgeItem` records with extracted facts, 1990s year detection, and slug identifiers.
+- **Graceful Error Handling**: Handles network dropouts, HTTP 404/500 errors, and malformed responses safely, returning fallback `KnowledgeItem` instances or empty `Optional` objects without throwing unhandled exceptions.
+
+
 ---
 
 ## 🛠️ Build & Verification
