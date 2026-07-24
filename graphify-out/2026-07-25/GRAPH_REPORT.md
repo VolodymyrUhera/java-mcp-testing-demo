@@ -1,11 +1,11 @@
 # Graph Report - JiraMCP  (2026-07-25)
 
 ## Corpus Check
-- 104 files · ~52,065 words
+- 104 files · ~52,129 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 749 nodes · 1227 edges · 53 communities (44 shown, 9 thin omitted)
+- 746 nodes · 1224 edges · 53 communities (44 shown, 9 thin omitted)
 - Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 143 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -169,8 +169,8 @@ Cohesion: 0.22
 Nodes (8): Global Constraints, Retro90s MCP Server Implementation Plan 🕹️✨, Spec & Plan Verification Self-Review, Task 1: Project Scaffolding & Knowledge Datasets 💾, Task 2: ResourceLoader & KnowledgeService Core 🧠, Task 3: Online Fallback SearchService 🔍, Task 4: ToolRegistry & 9 MCP Tools 🛠️, Task 5: HTTP SSE Server & Main Entrypoint 🚀
 
 ### Community 24 - "Retro 90s MCP Server (`retro90s-mcp`)"
-Cohesion: 0.07
-Nodes (27): 15 Datasets (`src/main/resources/knowledge/*.json`), 1. `ask90s`, 1. Establish SSE Connection (`GET /sse`), 2. `compare`, 2. Send JSON-RPC Requests (`POST /message`), 3. `recommend`, 4. `explain`, 5 MCP Resource URIs (+19 more)
+Cohesion: 0.08
+Nodes (24): 15 Datasets (`src/main/resources/knowledge/*.json`), 1. Connect to SSE Stream, 1. Establish SSE Connection, 2. Protocol Handshake (`initialize`), 2. Send JSON-RPC Requests, 3. List Available Tools (`tools/list`), 4. Call `ask90s` Tool (`tools/call`), 5. List Resources (`resources/list`) (+16 more)
 
 ### Community 26 - "Design Spec: Test Runner Subagent & Documentation"
 Cohesion: 0.25
@@ -258,14 +258,14 @@ Nodes (4): 📚 Documentation Directory, Java Playwright MCP & Testing Demo — 
 
 ### Community 51 - "ToolRegistry"
 Cohesion: 0.14
-Nodes (8): JsonNode, ObjectMapper, ObjectNode, ToolRegistry, BeforeEach, ObjectMapper, Test, ToolRegistryTest
+Nodes (9): ArrayNode, JsonNode, ObjectMapper, ObjectNode, ToolRegistry, BeforeEach, ObjectMapper, Test (+1 more)
 
 ### Community 52 - "Retro90sServer"
 Cohesion: 0.09
-Nodes (18): AfterAll, ArrayNode, BeforeAll, Main, HttpExchange, HttpServer, JsonNode, ObjectMapper (+10 more)
+Nodes (17): AfterAll, BeforeAll, Main, HttpExchange, HttpServer, JsonNode, ObjectMapper, ObjectNode (+9 more)
 
 ## Knowledge Gaps
-- **242 isolated node(s):** `java`, `npx`, `@niyogi/render-mcp`, `RENDER_API_KEY`, `demo-website` (+237 more)
+- **240 isolated node(s):** `java`, `npx`, `@niyogi/render-mcp`, `RENDER_API_KEY`, `demo-website` (+235 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -273,11 +273,11 @@ Nodes (18): AfterAll, ArrayNode, BeforeAll, Main, HttpExchange, HttpServer, Json
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Retro90sServer` connect `Retro90sServer` to `Test Report Generator`, `ToolRegistry`, `.runPerformanceTests`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
 - **Why does `PlaywrightManager` connect `Playwright Automation Manager` to `Demo HTTP Web Server`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+  _High betweenness centrality (0.059) - this node is a cross-community bridge._
 - **What connects `java`, `npx`, `@niyogi/render-mcp` to the rest of the system?**
-  _242 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _240 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `JSON Parsing Engine` be split into smaller, more focused modules?**
   _Cohesion score 0.08961593172119488 - nodes in this community are weakly interconnected._
 - **Should `Demo HTTP Web Server` be split into smaller, more focused modules?**

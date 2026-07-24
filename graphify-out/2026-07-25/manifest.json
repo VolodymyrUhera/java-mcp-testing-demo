@@ -105,8 +105,8 @@
     "semantic_hash": "46c5666c6123bd93ebe38f9513afab61"
   },
   "README.md": {
-    "mtime": 1784936906.8113992,
-    "ast_hash": "8ff58c2ad9211832c1d7d433fb884400",
+    "mtime": 1784930457.1203024,
+    "ast_hash": "259719cbf1a54c058c205dce2443ac4e",
     "semantic_hash": ""
   },
   "docs/architecture.md": {
@@ -530,8 +530,8 @@
     "semantic_hash": ""
   },
   "retro90s-mcp/README.md": {
-    "mtime": 1784936903.8693895,
-    "ast_hash": "6e8e4ccf100f645b4fd9e20ea85bce6c",
+    "mtime": 1784936681.7280664,
+    "ast_hash": "af25289266ac8fa2673ea2b7f7913439",
     "semantic_hash": ""
   },
   "retro90s-mcp/src/main/resources/prompts/personality.md": {
