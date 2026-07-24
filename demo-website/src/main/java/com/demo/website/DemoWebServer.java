@@ -49,7 +49,12 @@ public class DemoWebServer {
 
     public static void main(String[] args) throws IOException {
         int port = DEFAULT_PORT;
-        if (args.length > 0) {
+        String envPort = System.getenv("PORT");
+        if (envPort != null && !envPort.isBlank()) {
+            try {
+                port = Integer.parseInt(envPort.trim());
+            } catch (NumberFormatException ignored) {}
+        } else if (args.length > 0) {
             try {
                 port = Integer.parseInt(args[0]);
             } catch (NumberFormatException ignored) {}
