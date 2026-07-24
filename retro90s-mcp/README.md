@@ -99,6 +99,96 @@ Online search provider with Wikipedia and DuckDuckGo fallback capabilities using
 - **Graceful Error Handling**: Handles network dropouts, HTTP 404/500 errors, and malformed responses safely, returning fallback `KnowledgeItem` instances or empty `Optional` objects without throwing unhandled exceptions.
 
 
+### `ToolRegistry` (`com.retro90s.mcp.ToolRegistry`)
+Central MCP tool definitions registry and handler for 9 specialized tools:
+- **`listTools()`**: Returns JSON Schema list of all 9 supported MCP tools for `tools/list`.
+- **`callTool(String toolName, JsonNode arguments)`**: Executes requested tool using `KnowledgeService` with `SearchService` fallback, returning standard MCP JSON-RPC tool result objects (`{ "content": [ { "type": "text", "text": "..." } ], "isError": false }`).
+
+---
+
+## 🛠️ MCP Tools
+
+`retro90s-mcp` implements 9 Model Context Protocol tools. All tools follow JSON-RPC 2.0 and MCP tool specifications.
+
+| Tool Name | Description | Inputs | Output Schema |
+|---|---|---|---|
+| **`ask90s`** | Ask Cyber-Steve any question about 90s technology, software, hardware, pop culture, or historical events. | `question` (string, required) | Standard MCP Tool Result object containing Cyber-Steve commentary and historical facts. |
+| **`compare`** | Compare two 90s items, software, hardware, or pop culture phenomena. | `left` (string, required), `right` (string, required) | Detailed side-by-side 90s showdown comparison breakdown. |
+| **`recommend`** | Get top 90s recommendations for a given category or random picks. | `category` (string, optional) | Curated recommendations list with summaries and release years. |
+| **`explain`** | In-depth historical and technical explanation of a 90s concept, technology, or event. | `topic` (string, required) | Deep-dive explanation with creator, year, facts, and related topics. |
+| **`trivia`** | Get random 90s trivia question or obscure historical facts. | `category` (string, optional) | Random trivia fact with category and item context. |
+| **`nostalgia`** | Generate a nostalgic 90s memory trip, combining retro tech, culture, and Cyber-Steve commentary. | `theme` (string, optional) | Story-based nostalgia trip packed with 90s jargon and retro culture. |
+| **`year`** | Get a comprehensive breakdown of major 90s releases and events for a specific year (1990–1999). | `year` (integer, required) | Chronological breakdown of releases and historical events for that year. |
+| **`website`** | Explore 90s internet landmarks, early web browsers, search engines, and dot-com sites. | `name` (string, required) | Early web specs, simulated URL, launch year, and web archive notes. |
+| **`hardware`** | Get detailed technical specs and history for 90s hardware, CPUs, GPUs, and peripherals. | `component` (string, required) | Hardware spec sheet with manufacturer, year, and technical facts. |
+
+### Tool Execution JSON-RPC Format
+
+#### `tools/list` Request & Response
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "tools/list"
+}
+```
+Response:
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "tools": [
+      {
+        "name": "ask90s",
+        "description": "Ask Cyber-Steve any question about 90s technology...",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "question": {
+              "type": "string",
+              "description": "The 90s question or topic to search and ask about."
+            }
+          },
+          "required": ["question"]
+        }
+      }
+    ]
+  }
+}
+```
+
+#### `tools/call` Request & Response
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "method": "tools/call",
+  "params": {
+    "name": "ask90s",
+    "arguments": {
+      "question": "Windows 95"
+    }
+  }
+}
+```
+Response:
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "🕹️ Cyber-Steve says: Booyah! Here is the lowdown on 'Windows 95'..."
+      }
+    ],
+    "isError": false
+  }
+}
+```
+
 ---
 
 ## 🛠️ Build & Verification
