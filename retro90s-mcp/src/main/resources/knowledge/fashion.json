@@ -1,0 +1,129 @@
+[
+  {
+    "id": "fashion-grunge-1992",
+    "title": "Grunge Aesthetic & Flannel Shirts",
+    "category": "fashion",
+    "year": 1992,
+    "manufacturer": "Pop Culture / Pacific Northwest Scene",
+    "summary": "Anti-fashion movement originating in Seattle music culture, characterized by oversized plaid flannel shirts, distressed denim, Doc Martens boots, and layered thrift store clothes.",
+    "facts": [
+      "Brought into high fashion by Marc Jacobs' spring 1993 Perry Ellis collection.",
+      "Rooted in practical Pacific Northwest outdoor wear adapted by indie musicians.",
+      "Symbolized 90s youth rebellion and apathy towards polished 80s glam."
+    ],
+    "related": [
+      "music-nirvana-nevermind-1991",
+      "fashion-jnco-1996"
+    ],
+    "keywords": [
+      "grunge",
+      "flannel",
+      "doc martens",
+      "distressed denim",
+      "seattle",
+      "marc jacobs",
+      "alternative fashion"
+    ]
+  },
+  {
+    "id": "fashion-jnco-1996",
+    "title": "JNCO Wide-Leg Jeans",
+    "category": "fashion",
+    "year": 1996,
+    "manufacturer": "JNCO Apparel",
+    "summary": "Ultra-wide denim trousers with leg openings measuring up to 50 inches, hugely popular among ravers, skaters, and nu-metal youth culture.",
+    "facts": [
+      "Founded by brothers Jacques Revah and Haim Revah in Los Angeles (JNCO stands for 'Judge None Choose One').",
+      "Featured massive embroidered back pockets capable of holding entire hand-held consoles or spray paint cans.",
+      "Became an essential uniform of late-90s skateboarding and rave subcultures."
+    ],
+    "related": [
+      "fashion-grunge-1992",
+      "music-prodigy-fat-of-land-1997"
+    ],
+    "keywords": [
+      "jnco",
+      "wide leg jeans",
+      "denim",
+      "raver fashion",
+      "skateboarding",
+      "oversized",
+      "90s pants"
+    ]
+  },
+  {
+    "id": "fashion-windbreaker-1991",
+    "title": "Neon Windbreakers & Tracksuits",
+    "category": "fashion",
+    "year": 1991,
+    "manufacturer": "Nike / Adidas / Starter / Columbia",
+    "summary": "Vibrant, crinkled nylon windbreakers featuring bold geometric color-blocking in neon teal, magenta, purple, and gold.",
+    "facts": [
+      "Widely worn across high school campuses, hip-hop music videos, and athletic events.",
+      "Utilized lightweight crinkle nylon and mesh lining.",
+      "Embodied early-90s upbeat street style."
+    ],
+    "related": [
+      "fashion-snapback-1993",
+      "brands-nike-airmax-1995"
+    ],
+    "keywords": [
+      "windbreaker",
+      "tracksuit",
+      "neon",
+      "color blocking",
+      "nylon",
+      "90s streetwear"
+    ]
+  },
+  {
+    "id": "fashion-platform-shoes-1995",
+    "title": "Chunky Platform Shoes & Sneakers",
+    "category": "fashion",
+    "year": 1995,
+    "manufacturer": "Buffalo Boots / Steve Madden / Skechers",
+    "summary": "Towering platform sneakers and boots featuring 3 to 5 inch elevated soles, popularized by pop stars like the Spice Girls.",
+    "facts": [
+      "Buffalo Boots of Germany manufactured the iconic 1310-2 model platforms.",
+      "Defined clubwear and pop star aesthetics in mid-to-late 90s Europe and America.",
+      "Influenced casual footwear designs across high street fashion brands."
+    ],
+    "related": [
+      "music-spice-girls-1996",
+      "fashion-jnco-1996"
+    ],
+    "keywords": [
+      "platform shoes",
+      "chunky sneakers",
+      "buffalo boots",
+      "steve madden",
+      "skechers",
+      "spice girls fashion"
+    ]
+  },
+  {
+    "id": "fashion-snapback-1993",
+    "title": "Starter Snapback & Satin Jackets",
+    "category": "fashion",
+    "year": 1993,
+    "manufacturer": "Starter / Nike",
+    "summary": "Pro sports team licensed snapback baseball caps and satin break-away jackets featuring embroidered team logos and the signature Starter 'S and Star' logo.",
+    "facts": [
+      "Popularized by hip-hop groups like N.W.A, Run-DMC, and 90s athletes.",
+      "Featured adjustable plastic snap closures and silver satin inner lining.",
+      "High demand made them coveted fashion status symbols in urban youth culture."
+    ],
+    "related": [
+      "music-wutang-36chambers-1993",
+      "fashion-windbreaker-1991"
+    ],
+    "keywords": [
+      "starter jacket",
+      "snapback",
+      "satin jacket",
+      "starter logo",
+      "hip hop fashion",
+      "sports merch"
+    ]
+  }
+]

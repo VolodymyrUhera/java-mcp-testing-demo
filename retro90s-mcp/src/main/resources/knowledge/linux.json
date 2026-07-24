@@ -1,0 +1,130 @@
+[
+  {
+    "id": "linux-kernel-10-1994",
+    "title": "Linux Kernel 1.0.0 Release",
+    "category": "linux",
+    "year": 1994,
+    "manufacturer": "Linus Torvalds / Open Source Community",
+    "summary": "The official 1.0 release of the free open-source monolithic Unix-like operating system kernel created by Finnish student Linus Torvalds.",
+    "facts": [
+      "Linus Torvalds announced the original Linux project on Usenet comp.os.minix in August 1991.",
+      "Version 1.0.0 was released on March 14, 1994 with 176,250 lines of code.",
+      "Dual-licensed under the GNU General Public License (GPLv2)."
+    ],
+    "related": [
+      "linux-slackware-1993",
+      "linux-debian-1993",
+      "linux-tux-1996"
+    ],
+    "keywords": [
+      "linux",
+      "linus torvalds",
+      "kernel 1.0",
+      "open source",
+      "gpl",
+      "unix",
+      "minix"
+    ]
+  },
+  {
+    "id": "linux-slackware-1993",
+    "title": "Slackware Linux Distribution",
+    "category": "linux",
+    "year": 1993,
+    "manufacturer": "Patrick Volkerding",
+    "summary": "The oldest surviving Linux distribution, created by Patrick Volkerding to provide an authentic Unix-like computing environment installed via floppy disks.",
+    "facts": [
+      "Originally based on the SLS (Softlanding Linux System) distribution.",
+      "Distributed as sets of 3.5-inch floppy disk images named A, N, X, and Y.",
+      "Emphasized simplicity, stability, and minimal distribution modification."
+    ],
+    "related": [
+      "linux-kernel-10-1994",
+      "linux-debian-1993"
+    ],
+    "keywords": [
+      "slackware",
+      "patrick volkerding",
+      "linux distribution",
+      "pkgtool",
+      "unix",
+      "floppy install"
+    ]
+  },
+  {
+    "id": "linux-debian-1993",
+    "title": "Debian GNU/Linux",
+    "category": "linux",
+    "year": 1993,
+    "manufacturer": "Ian Murdock / Debian Project",
+    "summary": "Community-driven non-commercial Linux distribution founded by Ian Murdock, renowned for the dpkg package system, APT, and the Debian Social Contract.",
+    "facts": [
+      "Named 'Debian' as a portmanteau of Murdock's girlfriend Debra Lynn and his first name Ian.",
+      "Sponsored early on by Richard Stallman's Free Software Foundation (FSF).",
+      "Pioneered automated dependency resolution package management with Advanced Packaging Tool (APT)."
+    ],
+    "related": [
+      "linux-kernel-10-1994",
+      "linux-redhat-1994"
+    ],
+    "keywords": [
+      "debian",
+      "ian murdock",
+      "dpkg",
+      "apt",
+      "free software",
+      "fsf",
+      "distribution"
+    ]
+  },
+  {
+    "id": "linux-redhat-1994",
+    "title": "Red Hat Linux 1.0",
+    "category": "linux",
+    "year": 1994,
+    "manufacturer": "Red Hat (Marc Ewing & Bob Young)",
+    "summary": "Pioneering commercial Linux distribution that popularized the RPM Package Manager and brought open-source enterprise OS support to corporate IT.",
+    "facts": [
+      "Founded by Marc Ewing, who wore a red Cornell lacrosse hat given by his grandfather.",
+      "Introduced RPM (Red Hat Package Manager) package file format.",
+      "Became the first major open-source company to go public in August 1999."
+    ],
+    "related": [
+      "linux-kernel-10-1994",
+      "linux-debian-1993"
+    ],
+    "keywords": [
+      "red hat",
+      "rpm",
+      "marc ewing",
+      "bob young",
+      "commercial linux",
+      "enterprise"
+    ]
+  },
+  {
+    "id": "linux-tux-1996",
+    "title": "Tux the Linux Penguin",
+    "category": "linux",
+    "year": 1996,
+    "manufacturer": "Larry Ewing / Linus Torvalds",
+    "summary": "The world-famous official mascot of the Linux kernel, created by Larry Ewing using GIMP software following Linus Torvalds' love for penguins.",
+    "facts": [
+      "Created during a logo competition held on Linux kernel mailing lists in 1996.",
+      "Drawn using early versions of GIMP (GNU Image Manipulation Program).",
+      "Name stands for '(T)orvalds (U)ni(X)' as well as referring to a tuxedo appearance."
+    ],
+    "related": [
+      "linux-kernel-10-1994",
+      "programming-python-1994"
+    ],
+    "keywords": [
+      "tux",
+      "penguin",
+      "mascot",
+      "larry ewing",
+      "gimp",
+      "linux logo"
+    ]
+  }
+]

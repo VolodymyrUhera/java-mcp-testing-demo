@@ -1,0 +1,129 @@
+[
+  {
+    "id": "history-fall-ussr-1991",
+    "title": "Fall of the Soviet Union & End of Cold War",
+    "category": "history",
+    "year": 1991,
+    "manufacturer": "Global Geopolitics",
+    "summary": "The dissolution of the Soviet Union (USSR) into 15 independent nations, marking the end of the Cold War era.",
+    "facts": [
+      "Mikhail Gorbachev resigned as President of the USSR on December 25, 1991.",
+      "The Soviet hammer and sickle flag over the Kremlin was lowered and replaced with the Russian tricolor.",
+      "Reshaped global geopolitical alliances and trade markets."
+    ],
+    "related": [
+      "history-germany-unification-1990",
+      "history-hubble-1990"
+    ],
+    "keywords": [
+      "soviet union",
+      "fall of ussr",
+      "cold war end",
+      "gorbachev",
+      "kremlin",
+      "1991",
+      "geopolitics"
+    ]
+  },
+  {
+    "id": "history-germany-unification-1990",
+    "title": "Reunification of Germany",
+    "category": "history",
+    "year": 1990,
+    "manufacturer": "Federal Republic of Germany",
+    "summary": "The official political reunification of East Germany (GDR) and West Germany (FRG) following the fall of the Berlin Wall in November 1989.",
+    "facts": [
+      "The Two Plus Four Agreement signed in Moscow paved the way for unity.",
+      "Official Unity Day (Tag der Deutschen Einheit) celebrated on October 3, 1990.",
+      "Berlin was reinstated as the capital of reunified Germany."
+    ],
+    "related": [
+      "history-fall-ussr-1991"
+    ],
+    "keywords": [
+      "german reunification",
+      "berlin wall",
+      "east germany",
+      "west germany",
+      "berlin",
+      "1990"
+    ]
+  },
+  {
+    "id": "history-hubble-1990",
+    "title": "Hubble Space Telescope Launch & Repair",
+    "category": "history",
+    "year": 1990,
+    "manufacturer": "NASA / ESA / Space Shuttle Discovery",
+    "summary": "The deployment of the Hubble Space Telescope into low Earth orbit, followed by a famous 1993 Space Shuttle servicing mission to fix spherical aberration in its primary mirror.",
+    "facts": [
+      "Deployed by Space Shuttle Discovery mission STS-31 in April 1990.",
+      "Initial images were blurry due to a 2.2-micron flaw in mirror curvature.",
+      "STS-61 servicing mission in December 1993 installed COSTAR optics, producing breathtaking deep space imagery."
+    ],
+    "related": [
+      "history-fall-ussr-1991",
+      "history-dolly-sheep-1996"
+    ],
+    "keywords": [
+      "hubble",
+      "space telescope",
+      "nasa",
+      "space shuttle",
+      "costar",
+      "astronomy",
+      "discovery"
+    ]
+  },
+  {
+    "id": "history-y2k-panic-1999",
+    "title": "Y2K Bug Preparation & Global Panic",
+    "category": "history",
+    "year": 1999,
+    "manufacturer": "Global IT Industry / Financial & Government Institutions",
+    "summary": "Massive worldwide software remediation effort to correct two-digit year code representations in legacy software before the rollover to year 2000.",
+    "facts": [
+      "Cost an estimated $300 billion to $600 billion globally in software updates and system testing.",
+      "Fears included potential power grid failures, bank lockouts, and transportation disruptions.",
+      "Systematic remediation prevented widespread catastrophic failures on January 1, 2000."
+    ],
+    "related": [
+      "programming-java-1995",
+      "windows-98-1998"
+    ],
+    "keywords": [
+      "y2k",
+      "year 2000 bug",
+      "millennium bug",
+      "software patch",
+      "cobol",
+      "it remediation"
+    ]
+  },
+  {
+    "id": "history-dolly-sheep-1996",
+    "title": "Dolly the Sheep Cloning",
+    "category": "history",
+    "year": 1996,
+    "manufacturer": "Roslin Institute / University of Edinburgh",
+    "summary": "The first mammal successfully cloned from an adult somatic cell using somatic cell nuclear transfer (SCNT).",
+    "facts": [
+      "Born on July 5, 1996, at the Roslin Institute in Scotland, led by Ian Wilmut and Keith Campbell.",
+      "Named after country singer Dolly Parton.",
+      "Sparked worldwide ethical debates regarding genetic engineering and human cloning."
+    ],
+    "related": [
+      "history-hubble-1990",
+      "tech-dvd-format-1996"
+    ],
+    "keywords": [
+      "dolly the sheep",
+      "cloning",
+      "roslin institute",
+      "genetics",
+      "scnt",
+      "ian wilmut",
+      "biotechnology"
+    ]
+  }
+]

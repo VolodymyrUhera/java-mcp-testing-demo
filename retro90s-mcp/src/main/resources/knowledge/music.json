@@ -1,0 +1,133 @@
+[
+  {
+    "id": "music-nirvana-nevermind-1991",
+    "title": "Nirvana - Nevermind",
+    "category": "music",
+    "year": 1991,
+    "manufacturer": "DGC Records / Butch Vig",
+    "summary": "Landmark grunge rock album featuring 'Smells Like Teen Spirit' that propelled alternative rock into mainstream global youth culture.",
+    "facts": [
+      "Produced by Butch Vig and recorded at Sound City Studios in Van Nuys, California.",
+      "Knocked Michael Jackson's 'Dangerous' off the top of the Billboard 200 chart in January 1992.",
+      "Certified Diamond by the RIAA with over 30 million copies sold worldwide."
+    ],
+    "related": [
+      "fashion-grunge-1992",
+      "music-radiohead-okc-1997"
+    ],
+    "keywords": [
+      "nirvana",
+      "nevermind",
+      "kurt cobain",
+      "smells like teen spirit",
+      "grunge",
+      "alternative rock",
+      "dgc records"
+    ]
+  },
+  {
+    "id": "music-radiohead-okc-1997",
+    "title": "Radiohead - OK Computer",
+    "category": "music",
+    "year": 1997,
+    "manufacturer": "Parlophone / Capitol / Nigel Godrich",
+    "summary": "Masterpiece alternative rock album addressing consumerism, technology anxiety, transport paranoia, and 21st century alienation.",
+    "facts": [
+      "Self-produced alongside Nigel Godrich in St Catherine's Court, a historic manor in Bath.",
+      "Featured tracks like 'Paranoid Android', 'Karma Police', and 'No Surprises'.",
+      "Consistently ranked among the greatest albums in rock history."
+    ],
+    "related": [
+      "music-nirvana-nevermind-1991",
+      "music-prodigy-fat-of-land-1997"
+    ],
+    "keywords": [
+      "radiohead",
+      "ok computer",
+      "thom yorke",
+      "paranoid android",
+      "nigel godrich",
+      "alternative rock",
+      "paranoia"
+    ]
+  },
+  {
+    "id": "music-prodigy-fat-of-land-1997",
+    "title": "The Prodigy - The Fat of the Land",
+    "category": "music",
+    "year": 1997,
+    "manufacturer": "XL Recordings / Maverick",
+    "summary": "High-octane electronic dance music / big beat album featuring 'Firestarter' and 'Breathe' that brought rave culture to stadium stages.",
+    "facts": [
+      "Masterminded by Liam Howlett with vocals by Keith Flint and Maxim.",
+      "Debuted at number 1 on both the UK Albums Chart and US Billboard 200.",
+      "Iconic music video for 'Firestarter' featured Keith Flint in an underground tunnel."
+    ],
+    "related": [
+      "music-radiohead-okc-1997",
+      "tech-sony-discman-1999"
+    ],
+    "keywords": [
+      "the prodigy",
+      "fat of the land",
+      "firestarter",
+      "breathe",
+      "big beat",
+      "liam howlett",
+      "keith flint",
+      "rave"
+    ]
+  },
+  {
+    "id": "music-wutang-36chambers-1993",
+    "title": "Wu-Tang Clan - Enter the Wu-Tang (36 Chambers)",
+    "category": "music",
+    "year": 1993,
+    "manufacturer": "Loud Records / RZA",
+    "summary": "Groundbreaking debut hardcore East Coast hip-hop album produced by RZA featuring raw samples, kung-fu movie dialogue, and razor-sharp lyricism.",
+    "facts": [
+      "Recorded at Firehouse Studio in New York on a micro-budget.",
+      "Launched the solo careers of RZA, GZA, Ol' Dirty Bastard, Method Man, Raekwon, Ghostface Killah, and Inspectah Deck.",
+      "Restored East Coast hip-hop's dominance during the early 90s G-funk era."
+    ],
+    "related": [
+      "music-nirvana-nevermind-1991",
+      "fashion-snapback-1993"
+    ],
+    "keywords": [
+      "wu-tang clan",
+      "36 chambers",
+      "rza",
+      "method man",
+      "hip hop",
+      "cream",
+      "east coast rap"
+    ]
+  },
+  {
+    "id": "music-spice-girls-1996",
+    "title": "Spice Girls - Wannabe / Spice",
+    "category": "music",
+    "year": 1996,
+    "manufacturer": "Virgin Records",
+    "summary": "Global pop phenomenon album introducing 'Girl Power' and the quintet of Scary, Sporty, Baby, Ginger, and Posh Spice.",
+    "facts": [
+      "Debut single 'Wannabe' hit number 1 in 37 countries.",
+      "Best-selling album by a female group in music history with over 23 million copies sold.",
+      "Pioneered global brand merchandising for 90s pop groups."
+    ],
+    "related": [
+      "fashion-platform-shoes-1995",
+      "television-friends-1994"
+    ],
+    "keywords": [
+      "spice girls",
+      "wannabe",
+      "spice",
+      "girl power",
+      "pop music",
+      "posh spice",
+      "virgin records"
+    ]
+  }
+]

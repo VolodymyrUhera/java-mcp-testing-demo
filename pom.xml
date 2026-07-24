@@ -14,6 +14,7 @@
     <modules>
         <module>demo-website</module>
         <module>mcp-server</module>
+        <module>retro90s-mcp</module>
         <module>testing-scenarios</module>
     </modules>
 

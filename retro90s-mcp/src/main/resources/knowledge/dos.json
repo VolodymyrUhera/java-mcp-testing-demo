@@ -1,0 +1,131 @@
+[
+  {
+    "id": "dos-msdos-622-1994",
+    "title": "MS-DOS 6.22",
+    "category": "dos",
+    "year": 1994,
+    "manufacturer": "Microsoft",
+    "summary": "The final standalone release of Microsoft Disk Operating System, featuring DriveSpace disk compression, ScanDisk, Defrag, and MemMaker utility.",
+    "facts": [
+      "DriveSpace replaced DoubleSpace after legal patent disputes with Stac Electronics.",
+      "Included MemMaker to optimize conventional 640KB RAM allocation by loading drivers into Upper Memory Blocks (UMBs).",
+      "Essential command line OS for PC gaming throughout the early-to-mid 90s."
+    ],
+    "related": [
+      "windows-31-1992",
+      "dos-qbasic-1991",
+      "dos-norton-1993"
+    ],
+    "keywords": [
+      "ms-dos",
+      "dos 6.22",
+      "drivespace",
+      "scandisk",
+      "memmaker",
+      "command line",
+      "autoexec.bat",
+      "config.sys"
+    ]
+  },
+  {
+    "id": "dos-norton-1993",
+    "title": "Norton Commander 4.0",
+    "category": "dos",
+    "year": 1993,
+    "manufacturer": "Symantec / Central Point",
+    "summary": "The legendary dual-pane file manager for DOS, setting the standard for orthodox file managers with keyboard shortcuts and archive navigation.",
+    "facts": [
+      "Originally created by John Socha in 1986 and acquired by Symantec.",
+      "Used text-mode character graphics to display side-by-side directory trees.",
+      "Popularized function key commands (F5 Copy, F6 Move, F7 Mkdir, F8 Delete)."
+    ],
+    "related": [
+      "dos-msdos-622-1994"
+    ],
+    "keywords": [
+      "norton commander",
+      "file manager",
+      "dual pane",
+      "john socha",
+      "symantec",
+      "nc"
+    ]
+  },
+  {
+    "id": "dos-qbasic-1991",
+    "title": "Microsoft QBasic & Gorillas.bas",
+    "category": "dos",
+    "year": 1991,
+    "manufacturer": "Microsoft",
+    "summary": "The structured BASIC interpreter included with MS-DOS 5.0 and 6.x, packaged with iconic example games like GORILLA.BAS and NIBBLES.BAS.",
+    "facts": [
+      "Based on QuickBASIC 4.5 but lacked a standalone compiler.",
+      "GORILLA.BAS featured explosive banana trajectory artillery combat atop city skyscrapers.",
+      "Introduced millions of young programmers to software development."
+    ],
+    "related": [
+      "dos-msdos-622-1994",
+      "programming-java-1995"
+    ],
+    "keywords": [
+      "qbasic",
+      "gorillas.bas",
+      "nibbles.bas",
+      "basic",
+      "ms-dos",
+      "programming"
+    ]
+  },
+  {
+    "id": "dos-memory-managers-1990",
+    "title": "DOS Memory Managers (HIMEM.SYS & EMM386.EXE)",
+    "category": "dos",
+    "year": 1990,
+    "manufacturer": "Microsoft / Quarterdeck / Qualitas",
+    "summary": "System drivers enabling DOS applications and games to access memory above the 640KB barrier (High Memory Area, Expanded Memory EMS, and Extended Memory XMS).",
+    "facts": [
+      "CONFIG.SYS configuration tweaking was mandatory for PC gamers to free conventional RAM.",
+      "Competing third-party tools like QEMM-386 and 386MAX offered aggressive RAM optimization.",
+      "Broke through the 8086 1MB physical memory addressing limitation."
+    ],
+    "related": [
+      "dos-msdos-622-1994",
+      "games-doom-1993"
+    ],
+    "keywords": [
+      "himem.sys",
+      "emm386",
+      "640kb limit",
+      "conventional memory",
+      "expanded memory",
+      "extended memory",
+      "qemm"
+    ]
+  },
+  {
+    "id": "dos-djgpp-1992",
+    "title": "DJGPP 32-bit C/C++ Development Suite",
+    "category": "dos",
+    "year": 1992,
+    "manufacturer": "DJ Delorie",
+    "summary": "Full-featured port of the GNU C/C++ compiler toolchain for 32-bit protected mode DOS computers using CWSDPMI DOS extenders.",
+    "facts": [
+      "Created by DJ Delorie allowing gcc and g++ to build 32-bit flat-memory DOS executables.",
+      "Used to develop major PC games like DOOM, Quake, and Duke Nukem 3D.",
+      "Eliminated 16-bit memory segment barrier for high-performance software."
+    ],
+    "related": [
+      "games-doom-1993",
+      "games-quake-1996",
+      "dos-msdos-622-1994"
+    ],
+    "keywords": [
+      "djgpp",
+      "gcc",
+      "dos extender",
+      "cwsdpmi",
+      "32-bit dos",
+      "dj delorie"
+    ]
+  }
+]

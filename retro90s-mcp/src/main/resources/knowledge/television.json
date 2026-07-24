@@ -1,0 +1,133 @@
+[
+  {
+    "id": "television-xfiles-1993",
+    "title": "The X-Files",
+    "category": "television",
+    "year": 1993,
+    "manufacturer": "20th Century Fox Television / Chris Carter",
+    "summary": "Iconic sci-fi mystery drama series following FBI Special Agents Fox Mulder and Dana Scully investigating paranormal cases and alien government conspiracies.",
+    "facts": [
+      "Created by Chris Carter and broadcast on the Fox Network.",
+      "Popularized tagline 'The Truth Is Out There' and 'I Want to Believe'.",
+      "Won 16 Emmy Awards and 5 Golden Globes during its 90s run."
+    ],
+    "related": [
+      "television-twin-peaks-1990",
+      "movies-matrix-1999"
+    ],
+    "keywords": [
+      "x-files",
+      "mulder",
+      "scully",
+      "chris carter",
+      "ufo",
+      "paranormal",
+      "alien conspiracy",
+      "the truth is out there"
+    ]
+  },
+  {
+    "id": "television-friends-1994",
+    "title": "Friends",
+    "category": "television",
+    "year": 1994,
+    "manufacturer": "Bright/Kauffman/Crane Productions / Warner Bros.",
+    "summary": "Massively popular NBC sitcom following six friends living in Manhattan (Rachel, Monica, Phoebe, Joey, Chandler, and Ross).",
+    "facts": [
+      "Created by David Crane and Marta Kauffman.",
+      "Theme song 'I'll Be There for You' by The Rembrandts hit number 1 on US radio charts.",
+      "The 'Rachel' haircut became a worldwide 90s hair trend."
+    ],
+    "related": [
+      "television-seinfeld-1990",
+      "fashion-grunge-1992"
+    ],
+    "keywords": [
+      "friends",
+      "central perk",
+      "rachel green",
+      "ross geller",
+      "chandler bing",
+      "sitcom",
+      "nbc"
+    ]
+  },
+  {
+    "id": "television-seinfeld-1990",
+    "title": "Seinfeld",
+    "category": "television",
+    "year": 1990,
+    "manufacturer": "West-Shapiro Productions / Castle Rock Entertainment",
+    "summary": "Critically acclaimed NBC sitcom co-created by Larry David and Jerry Seinfeld, famously dubbed 'the show about nothing'.",
+    "facts": [
+      "Followed Jerry Seinfeld, George Costanza, Elaine Benes, and Cosmo Kramer.",
+      "Series finale in May 1998 drew 76.3 million viewers in the United States.",
+      "Coined legendary pop culture catchphrases like 'Yada yada yada', 'No soup for you!', and 'Festivus'."
+    ],
+    "related": [
+      "television-friends-1994",
+      "television-xfiles-1993"
+    ],
+    "keywords": [
+      "seinfeld",
+      "jerry seinfeld",
+      "larry david",
+      "kramer",
+      "george costanza",
+      "yada yada",
+      "soup nazi",
+      "sitcom"
+    ]
+  },
+  {
+    "id": "television-twin-peaks-1990",
+    "title": "Twin Peaks",
+    "category": "television",
+    "year": 1990,
+    "manufacturer": "Lynch/Frost Productions / ABC",
+    "summary": "Surreal mystery serial drama created by Mark Frost and David Lynch revolving around the murder of high school student Laura Palmer in a spooky Washington town.",
+    "facts": [
+      "Starred Kyle MacLachlan as FBI Special Agent Dale Cooper.",
+      "Features Angelo Badalamenti's iconic haunting synth score.",
+      "Central question 'Who killed Laura Palmer?' gripped international television audiences."
+    ],
+    "related": [
+      "television-xfiles-1993"
+    ],
+    "keywords": [
+      "twin peaks",
+      "david lynch",
+      "dale cooper",
+      "laura palmer",
+      "red room",
+      "cherry pie",
+      "surreal drama"
+    ]
+  },
+  {
+    "id": "television-pokemon-1997",
+    "title": "Pokémon Anime Series",
+    "category": "television",
+    "year": 1997,
+    "manufacturer": "OLM / TV Tokyo / Nintendo",
+    "summary": "Hit Japanese anime series following young trainer Ash Ketchum and Pikachu on their quest to become a Pokémon Master, sparking global Pokémania.",
+    "facts": [
+      "Adapted from Satoshi Tajiri's Game Boy titles Pokémon Red and Blue.",
+      "Famous English theme song 'Gotta Catch 'Em All!' became an instant pop classic.",
+      "Sparked immense demand for trading card games and handheld video games."
+    ],
+    "related": [
+      "brands-tamagotchi-1996",
+      "brands-gameboy-pocket-1996"
+    ],
+    "keywords": [
+      "pokemon",
+      "pikachu",
+      "ash ketchum",
+      "gotta catch em all",
+      "anime",
+      "nintendo",
+      "pokemania"
+    ]
+  }
+]

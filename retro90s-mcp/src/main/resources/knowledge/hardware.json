@@ -1,0 +1,135 @@
+[
+  {
+    "id": "hardware-voodoo-1996",
+    "title": "3dfx Voodoo Graphics Card",
+    "category": "hardware",
+    "year": 1996,
+    "manufacturer": "3dfx Interactive",
+    "summary": "The groundbreaking 3D add-on accelerator card utilizing the Glide API that catalyzed the 3D PC gaming hardware revolution.",
+    "facts": [
+      "Came with 4MB of EDO DRAM (2MB frame buffer, 2MB texture memory).",
+      "Required a passthrough VGA cable connected to an existing 2D graphics card.",
+      "Offered unprecedented hardware bilinear filtering, anti-aliasing, and alpha blending."
+    ],
+    "related": [
+      "games-quake-1996",
+      "games-halflife-1998",
+      "hardware-pentium2-1997"
+    ],
+    "keywords": [
+      "3dfx",
+      "voodoo graphics",
+      "glide api",
+      "3d accelerator",
+      "vga passthrough",
+      "gpu",
+      "pc gaming"
+    ]
+  },
+  {
+    "id": "hardware-pentium-1993",
+    "title": "Intel Pentium Processor (P5 / P54C)",
+    "category": "hardware",
+    "year": 1993,
+    "manufacturer": "Intel Corporation",
+    "summary": "Superscalar x86 processor introduced by Intel featuring dual execution pipelines, 64-bit data bus, and floating-point unit (FPU).",
+    "facts": [
+      "First Intel x86 CPU to use a brand name instead of a number sequence (e.g. 586) to secure trademark protection.",
+      "Famous for the 1994 Pentium FDIV floating-point division bug that caused a major recall.",
+      "Introduced Pentium MMX technology in 1997 with 57 new SIMD instructions for multimedia."
+    ],
+    "related": [
+      "hardware-pentium2-1997",
+      "hardware-sound-blaster-16-1992",
+      "windows-95-1995"
+    ],
+    "keywords": [
+      "intel",
+      "pentium",
+      "p5",
+      "superscalar",
+      "mmx",
+      "fdiv bug",
+      "x86"
+    ]
+  },
+  {
+    "id": "hardware-sound-blaster-16-1992",
+    "title": "Creative Sound Blaster 16",
+    "category": "hardware",
+    "year": 1992,
+    "manufacturer": "Creative Technology",
+    "summary": "The de facto industry standard PC audio card for 16-bit 44.1kHz CD-quality digital sound and Yamaha OPL3 FM synthesis in DOS/Windows games.",
+    "facts": [
+      "Offered 16-bit stereo CD-quality audio playback and recording.",
+      "Included Yamaha YMF262 (OPL3) chip for retro FM synth game music.",
+      "Featured a 15-pin gameport joystick connector and optional ASP/CSP digital signal processor slot."
+    ],
+    "related": [
+      "games-doom-1993",
+      "dos-msdos-622-1994",
+      "hardware-pentium-1993"
+    ],
+    "keywords": [
+      "sound blaster 16",
+      "creative labs",
+      "opl3",
+      "isa bus",
+      "fm synthesis",
+      "pc audio",
+      "gameport"
+    ]
+  },
+  {
+    "id": "hardware-pentium2-1997",
+    "title": "Intel Pentium II Processor",
+    "category": "hardware",
+    "year": 1997,
+    "manufacturer": "Intel Corporation",
+    "summary": "Sixth-generation x86 microprocessor packaged in a distinctive Single Edge Contact Cartridge (SECC) for Slot 1 mainboards.",
+    "facts": [
+      "Built on P6 microarchitecture inherited from Pentium Pro.",
+      "Housed the CPU die and 512KB off-die L2 cache on a PCB cartridge with plastic casing.",
+      "Operated at clock speeds ranging from 233 MHz to 450 MHz."
+    ],
+    "related": [
+      "hardware-pentium-1993",
+      "hardware-voodoo-1996",
+      "windows-98-1998"
+    ],
+    "keywords": [
+      "pentium ii",
+      "intel",
+      "slot 1",
+      "secc",
+      "klamath",
+      "deschutes",
+      "p6"
+    ]
+  },
+  {
+    "id": "hardware-cyrix-6x86-1995",
+    "title": "Cyrix 6x86 Processor",
+    "category": "hardware",
+    "year": 1995,
+    "manufacturer": "Cyrix / IBM / SGS-Thomson",
+    "summary": "Popular budget alternative Socket 7 CPU boasting superior integer math performance over Intel Pentium at lower prices.",
+    "facts": [
+      "Used P-rating system (e.g. 6x86 PR166+) indicating integer equivalence to Pentium clock speeds.",
+      "Suffered from weak floating-point unit (FPU) performance in games like Quake.",
+      "Designed by Cyrix and manufactured in IBM and SGS-Thomson semiconductor foundries."
+    ],
+    "related": [
+      "hardware-pentium-1993",
+      "games-quake-1996"
+    ],
+    "keywords": [
+      "cyrix",
+      "6x86",
+      "socket 7",
+      "pr rating",
+      "cpu",
+      "x86 alternative"
+    ]
+  }
+]

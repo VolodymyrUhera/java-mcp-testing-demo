@@ -1,0 +1,134 @@
+[
+  {
+    "id": "movies-jurassic-park-1993",
+    "title": "Jurassic Park",
+    "category": "movies",
+    "year": 1993,
+    "manufacturer": "Universal Pictures / Steven Spielberg",
+    "summary": "Blockbuster sci-fi monster film based on Michael Crichton's novel, pioneering photorealistic CGI dinosaur animation created by Industrial Light & Magic (ILM).",
+    "facts": [
+      "Directed by Steven Spielberg with practical animatronics designed by Stan Winston.",
+      "ILM CGI animation led by Dennis Muren revolutionized computer graphics in Hollywood.",
+      "Became the highest-grossing film of all time upon release, earning over $914 million worldwide."
+    ],
+    "related": [
+      "movies-matrix-1999",
+      "tech-dvd-format-1996"
+    ],
+    "keywords": [
+      "jurassic park",
+      "steven spielberg",
+      "dinosaurs",
+      "ilm",
+      "stan winston",
+      "cgi",
+      "universal pictures"
+    ]
+  },
+  {
+    "id": "movies-matrix-1999",
+    "title": "The Matrix",
+    "category": "movies",
+    "year": 1999,
+    "manufacturer": "Warner Bros. / The Wachowskis",
+    "summary": "Cyberpunk sci-fi masterpiece starring Keanu Reeves as Neo, famous for introducing 'Bullet Time' visual effects, wire-fu action, and simulation theory.",
+    "facts": [
+      "Directed by Lana and Lilly Wachowski.",
+      "Bullet time effect achieved using custom arrays of green-screen still cameras triggered sequentially.",
+      "Won 4 Academy Awards including Best Visual Effects and Best Sound."
+    ],
+    "related": [
+      "movies-jurassic-park-1993",
+      "tech-dvd-format-1996"
+    ],
+    "keywords": [
+      "the matrix",
+      "matrix",
+      "bullet time",
+      "neo",
+      "keanu reeves",
+      "wachowskis",
+      "cyberpunk",
+      "red pill"
+    ]
+  },
+  {
+    "id": "movies-pulp-fiction-1994",
+    "title": "Pulp Fiction",
+    "category": "movies",
+    "year": 1994,
+    "manufacturer": "Miramax / Quentin Tarantino",
+    "summary": "Non-linear neo-noir crime masterpiece written and directed by Quentin Tarantino, redefining independent cinema and pop-culture dialogue.",
+    "facts": [
+      "Won the Palme d'Or at the 1994 Cannes Film Festival and Academy Award for Best Original Screenplay.",
+      "Revitalized John Travolta's acting career alongside iconic roles for Samuel L. Jackson and Uma Thurman.",
+      "First indie film to surpass $100 million at the US box office."
+    ],
+    "related": [
+      "movies-jurassic-park-1993",
+      "movies-titanic-1997"
+    ],
+    "keywords": [
+      "pulp fiction",
+      "quentin tarantino",
+      "miramax",
+      "john travolta",
+      "samuel l jackson",
+      "royale with cheese",
+      "indie film"
+    ]
+  },
+  {
+    "id": "movies-titanic-1997",
+    "title": "Titanic",
+    "category": "movies",
+    "year": 1997,
+    "manufacturer": "Paramount Pictures / 20th Century Fox / James Cameron",
+    "summary": "Epic romantic disaster film directed by James Cameron starring Leonardo DiCaprio and Kate Winslet, becoming the highest-grossing film of the 20th century.",
+    "facts": [
+      "Tied the record for most Academy Award wins (11 Oscars) including Best Picture and Best Director.",
+      "First film to cross the $1 billion box office threshold worldwide.",
+      "Soundtrack featuring Celine Dion's 'My Heart Will Go On' sold over 30 million copies."
+    ],
+    "related": [
+      "movies-jurassic-park-1993",
+      "movies-matrix-1999",
+      "music-spice-girls-1996"
+    ],
+    "keywords": [
+      "titanic",
+      "james cameron",
+      "leonardo dicaprio",
+      "kate winslet",
+      "my heart will go on",
+      "oscars",
+      "blockbuster"
+    ]
+  },
+  {
+    "id": "movies-toy-story-1995",
+    "title": "Toy Story",
+    "category": "movies",
+    "year": 1995,
+    "manufacturer": "Pixar Animation Studios / Walt Disney Pictures",
+    "summary": "The world's first fully computer-animated feature film, directed by John Lasseter and featuring the voices of Tom Hanks (Woody) and Tim Allen (Buzz Lightyear).",
+    "facts": [
+      "Produced at Pixar using RenderMan software on Silicon Graphics (SGI) workstations.",
+      "Earned a Special Achievement Academy Award for director John Lasseter.",
+      "Grossed over $373 million and launched Pixar as a premier feature film studio."
+    ],
+    "related": [
+      "movies-jurassic-park-1993",
+      "movies-matrix-1999"
+    ],
+    "keywords": [
+      "toy story",
+      "pixar",
+      "disney",
+      "woody",
+      "buzz lightyear",
+      "renderman",
+      "cgi animation"
+    ]
+  }
+]

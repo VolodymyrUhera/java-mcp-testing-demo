@@ -1,0 +1,132 @@
+[
+  {
+    "id": "brands-tamagotchi-1996",
+    "title": "Tamagotchi Virtual Pet",
+    "category": "brands",
+    "year": 1996,
+    "manufacturer": "Bandai",
+    "summary": "Egg-shaped keychain virtual pet device created in Japan by Aki Maita and Akihiro Yokoi, requiring users to feed, clean, and care for a digital creature.",
+    "facts": [
+      "Released by Bandai in Japan in November 1996 and worldwide in May 1997.",
+      "Sold over 80 million units worldwide during its peak popularity.",
+      "Spurred school bans due to constant feeding and attention alarms."
+    ],
+    "related": [
+      "brands-beanie-babies-1993",
+      "brands-gameboy-pocket-1996"
+    ],
+    "keywords": [
+      "tamagotchi",
+      "bandai",
+      "virtual pet",
+      "keychain",
+      "aki maita",
+      "japan toy",
+      "digital pet"
+    ]
+  },
+  {
+    "id": "brands-beanie-babies-1993",
+    "title": "Ty Beanie Babies",
+    "category": "brands",
+    "year": 1993,
+    "manufacturer": "Ty Inc.",
+    "summary": "Line of plush stuffed animals filled with plastic pellets ('beans') created by Ty Warner, sparking a speculative secondary market collector craze.",
+    "facts": [
+      "Introduced Ty heart-shaped swing tags with custom poems and birth dates.",
+      "Ty Warner pioneered artificial scarcity by retiring specific designs without notice.",
+      "Early adopters traded rare Beanie Babies for thousands of dollars on early web auction sites like eBay."
+    ],
+    "related": [
+      "brands-tamagotchi-1996",
+      "internet-ebay-1995"
+    ],
+    "keywords": [
+      "beanie babies",
+      "ty warner",
+      "ty inc",
+      "plush toy",
+      "collector craze",
+      "heart tag",
+      "speculative bubble"
+    ]
+  },
+  {
+    "id": "brands-blockbuster-1990",
+    "title": "Blockbuster Video",
+    "category": "brands",
+    "year": 1990,
+    "manufacturer": "Blockbuster Entertainment Corp",
+    "summary": "Dominant home video and game rental retail chain featuring signature blue-and-yellow store design, VHS tape walls, and quick drop boxes.",
+    "facts": [
+      "Operated over 9,000 stores worldwide at its peak in the late 1990s.",
+      "Famous tagline: 'Make it a Blockbuster Night'.",
+      "Pioneered revenue-sharing arrangements with major Hollywood movie studios."
+    ],
+    "related": [
+      "tech-dvd-format-1996",
+      "movies-jurassic-park-1993"
+    ],
+    "keywords": [
+      "blockbuster video",
+      "movie rental",
+      "vhs",
+      "make it a blockbuster night",
+      "video store",
+      "game rental"
+    ]
+  },
+  {
+    "id": "brands-nike-airmax-1995",
+    "title": "Nike Air Max 95 & Air Jordan XI",
+    "category": "brands",
+    "year": 1995,
+    "manufacturer": "Nike",
+    "summary": "Iconic athletic footwear releases designed by Sergio Lozano (Air Max 95) and Tinker Hatfield (Air Jordan XI), defining 90s sneakerhead culture.",
+    "facts": [
+      "Air Max 95 featured visible forefoot air cushioning and human anatomy-inspired layered upper.",
+      "Air Jordan XI introduced shiny patent leather and carbon fiber shank plates to basketball performance shoes.",
+      "Worn by Michael Jordan during the Chicago Bulls' legendary 72-10 1995-96 NBA championship season."
+    ],
+    "related": [
+      "fashion-snapback-1993",
+      "fashion-windbreaker-1991"
+    ],
+    "keywords": [
+      "nike",
+      "air max 95",
+      "air jordan xi",
+      "tinker hatfield",
+      "michael jordan",
+      "sneakers",
+      "patent leather"
+    ]
+  },
+  {
+    "id": "brands-gameboy-pocket-1996",
+    "title": "Nintendo Game Boy Pocket & Color",
+    "category": "brands",
+    "year": 1996,
+    "manufacturer": "Nintendo",
+    "summary": "Redesigned compact monochrome (Pocket) and color-display (Color) handheld gaming consoles created under Gunpei Yokoi's legacy.",
+    "facts": [
+      "Game Boy Pocket (1996) reduced unit size by 30% and operated on two AAA batteries.",
+      "Game Boy Color (1998) introduced a crisp color LCD screen and backwards compatibility with all original Game Boy cartridges.",
+      "Fueled by the immense popularity of Pokémon Red, Blue, and Yellow games."
+    ],
+    "related": [
+      "consoles-snes-1990",
+      "television-pokemon-1997",
+      "brands-tamagotchi-1996"
+    ],
+    "keywords": [
+      "game boy pocket",
+      "game boy color",
+      "nintendo",
+      "handheld",
+      "pokemon",
+      "gunpei yokoi",
+      "gbc"
+    ]
+  }
+]

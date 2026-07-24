@@ -1,0 +1,130 @@
+[
+  {
+    "id": "programming-java-1995",
+    "title": "Java Programming Language",
+    "category": "programming",
+    "year": 1995,
+    "manufacturer": "Sun Microsystems",
+    "summary": "Object-oriented, class-based language designed by James Gosling with the slogan 'Write Once, Run Anywhere' (WORA) using the Java Virtual Machine (JVM).",
+    "facts": [
+      "Originally named 'Oak' after an oak tree outside James Gosling's office.",
+      "Officially launched at the SunWorld conference in May 1995.",
+      "Popularized Java Applets embedded in web browsers for interactive web graphics."
+    ],
+    "related": [
+      "programming-javascript-1995",
+      "internet-netscape-1994"
+    ],
+    "keywords": [
+      "java",
+      "sun microsystems",
+      "james gosling",
+      "jvm",
+      "applets",
+      "wora",
+      "object oriented"
+    ]
+  },
+  {
+    "id": "programming-javascript-1995",
+    "title": "JavaScript (LiveScript)",
+    "category": "programming",
+    "year": 1995,
+    "manufacturer": "Netscape Communications / Brendan Eich",
+    "summary": "Dynamic prototype-based scripting language created in 10 days by Brendan Eich for Netscape Navigator 2.0 to add client-side web interactivity.",
+    "facts": [
+      "Originally named Mocha, renamed LiveScript, and quickly renamed JavaScript to leverage Java hype.",
+      "Standardized under ECMA International as ECMAScript (ECMA-262) in 1997.",
+      "Formed the foundation of dynamic client-side web application programming."
+    ],
+    "related": [
+      "internet-netscape-1994",
+      "programming-java-1995"
+    ],
+    "keywords": [
+      "javascript",
+      "brendan eich",
+      "netscape",
+      "ecmascript",
+      "livescript",
+      "web scripting"
+    ]
+  },
+  {
+    "id": "programming-python-1994",
+    "title": "Python 1.0 Release",
+    "category": "programming",
+    "year": 1994,
+    "manufacturer": "Guido van Rossum",
+    "summary": "High-level interpreted programming language emphasizing code readability, clean syntax, dynamic typing, and module extensibility.",
+    "facts": [
+      "Created by Guido van Rossum at CWI in the Netherlands, named after Monty Python's Flying Circus.",
+      "Version 1.0 released in January 1994 featuring functional programming tools like lambda, map, filter, and reduce.",
+      "Gained strong popularity in Unix system administration and scientific scripting."
+    ],
+    "related": [
+      "linux-kernel-10-1994",
+      "programming-php-1995"
+    ],
+    "keywords": [
+      "python",
+      "guido van rossum",
+      "python 1.0",
+      "benevolent dictator",
+      "scripting",
+      "cwi"
+    ]
+  },
+  {
+    "id": "programming-delphi-1995",
+    "title": "Borland Delphi 1.0",
+    "category": "programming",
+    "year": 1995,
+    "manufacturer": "Borland",
+    "summary": "Rapid Application Development (RAD) IDE and Object Pascal compiler for 16-bit Windows, famed for lightning-fast compilation speeds and visual form design.",
+    "facts": [
+      "Chief architect Anders Hejlsberg later went on to design C# at Microsoft.",
+      "Visual Component Library (VCL) allowed drag-and-drop database component binding.",
+      "Compiled Pascal source code directly into native machine code binaries instantly."
+    ],
+    "related": [
+      "windows-31-1992",
+      "windows-95-1995"
+    ],
+    "keywords": [
+      "delphi",
+      "borland",
+      "object pascal",
+      "anders hejlsberg",
+      "vcl",
+      "rad",
+      "ide"
+    ]
+  },
+  {
+    "id": "programming-php-1995",
+    "title": "PHP / Personal Home Page Tools",
+    "category": "programming",
+    "year": 1995,
+    "manufacturer": "Rasmus Lerdorf",
+    "summary": "Server-side web scripting language created by Rasmus Lerdorf as a set of C binaries to track visits to his online resume.",
+    "facts": [
+      "Originally stood for 'Personal Home Page / Form Interpreter' (PHP/FI).",
+      "Rewritten in 1997 by Zeev Suraski and Andi Gutmans to form the core of PHP 3.",
+      "Enabled easy HTML page templating and database connectivity for early web servers."
+    ],
+    "related": [
+      "internet-geocities-1994",
+      "programming-javascript-1995"
+    ],
+    "keywords": [
+      "php",
+      "rasmus lerdorf",
+      "php/fi",
+      "zeev suraski",
+      "andi gutmans",
+      "server-side",
+      "web development"
+    ]
+  }
+]

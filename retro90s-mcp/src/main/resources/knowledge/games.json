@@ -1,0 +1,137 @@
+[
+  {
+    "id": "games-doom-1993",
+    "title": "DOOM",
+    "category": "games",
+    "year": 1993,
+    "manufacturer": "id Software",
+    "summary": "Genre-defining first-person shooter featuring 3D graphics engine, networked deathmatch multiplayer, moddable WAD files, and intense demon-slaying action.",
+    "facts": [
+      "Designed by John Carmack, John Romero, Adrian Carmack, and Tom Hall.",
+      "Distributed as shareware episode 'Knee-Deep in the Dead', installed on millions of PCs worldwide.",
+      "Popularized multiplayer LAN deathmatching and custom WAD modding culture."
+    ],
+    "related": [
+      "games-quake-1996",
+      "games-halflife-1998",
+      "hardware-sound-blaster-16-1992"
+    ],
+    "keywords": [
+      "doom",
+      "id software",
+      "john carmack",
+      "john romero",
+      "fps",
+      "shareware",
+      "wad",
+      "deathmatch"
+    ]
+  },
+  {
+    "id": "games-halflife-1998",
+    "title": "Half-Life",
+    "category": "games",
+    "year": 1998,
+    "manufacturer": "Valve Software / Sierra On-Line",
+    "summary": "Revolutionary sci-fi FPS game following physicist Gordon Freeman at Black Mesa, integrating seamless narrative storytelling without cutscenes.",
+    "facts": [
+      "Built on GoldSrc engine, a heavily modified version of the Quake engine.",
+      "Won over 50 Game of the Year awards in 1998.",
+      "Spawned legendary community mods including Counter-Strike, Day of Defeat, and Team Fortress Classic."
+    ],
+    "related": [
+      "games-quake-1996",
+      "games-doom-1993",
+      "hardware-voodoo-1996"
+    ],
+    "keywords": [
+      "half-life",
+      "valve",
+      "gordon freeman",
+      "black mesa",
+      "goldsrc",
+      "counter-strike",
+      "fps"
+    ]
+  },
+  {
+    "id": "games-starcraft-1998",
+    "title": "StarCraft",
+    "category": "games",
+    "year": 1998,
+    "manufacturer": "Blizzard Entertainment",
+    "summary": "Masterpiece real-time strategy (RTS) game featuring three asymmetric factions (Terran, Zerg, Protoss) and competitive Battle.net multiplayer.",
+    "facts": [
+      "Became a cultural phenomenon and national esport in South Korea.",
+      "Expanded with StarCraft: Brood War in late 1998.",
+      "Sold over 11 million copies worldwide."
+    ],
+    "related": [
+      "internet-aol-1991",
+      "games-halflife-1998"
+    ],
+    "keywords": [
+      "starcraft",
+      "blizzard",
+      "rts",
+      "terran",
+      "zerg",
+      "protoss",
+      "battle.net",
+      "esports"
+    ]
+  },
+  {
+    "id": "games-quake-1996",
+    "title": "Quake",
+    "category": "games",
+    "year": 1996,
+    "manufacturer": "id Software",
+    "summary": "Pioneering true 3D FPS game with full 3D polygonal rendering, dark gothic industrial soundtrack by Trent Reznor (Nine Inch Nails), and Client-Side Prediction networking.",
+    "facts": [
+      "Engine designed by John Carmack supporting hardware 3D acceleration (GLQuake).",
+      "QuakeWorld update in 1996 enabled low-latency online multiplayer over dial-up internet.",
+      "Music and ambient sound design created by Trent Reznor."
+    ],
+    "related": [
+      "games-doom-1993",
+      "hardware-voodoo-1996",
+      "music-nin-1994"
+    ],
+    "keywords": [
+      "quake",
+      "id software",
+      "john carmack",
+      "trent reznor",
+      "glquake",
+      "quakeworld",
+      "3d engine"
+    ]
+  },
+  {
+    "id": "games-zelda-oot-1998",
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "category": "games",
+    "year": 1998,
+    "manufacturer": "Nintendo",
+    "summary": "Critically acclaimed 3D action-adventure title for Nintendo 64 that defined 3D target lock-on combat (Z-targeting) and camera mechanics.",
+    "facts": [
+      "Directed by Shigeru Miyamoto and team at Nintendo EAD.",
+      "Pioneered context-sensitive action buttons and Z-targeting lock-on targeting.",
+      "Remains one of the highest-rated video games of all time on Metacritic (99/100)."
+    ],
+    "related": [
+      "consoles-n64-1996",
+      "consoles-snes-1990"
+    ],
+    "keywords": [
+      "zelda",
+      "ocarina of time",
+      "nintendo 64",
+      "n64",
+      "shigeru miyamoto",
+      "z-targeting",
+      "hyrule"
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "id": "internet-netscape-1994",
+    "title": "Netscape Navigator Web Browser",
+    "category": "internet",
+    "year": 1994,
+    "manufacturer": "Netscape Communications",
+    "summary": "The dominant web browser of the mid-1990s that introduced JavaScript, frames, cookies, and SSL encryption to the World Wide Web.",
+    "facts": [
+      "Created by Marc Andreessen and Jim Clark, built upon NCSA Mosaic concepts.",
+      "Netscape Communications went public in 1995, triggering the dot-com boom.",
+      "Introduced JavaScript (initially called LiveScript) created by Brendan Eich."
+    ],
+    "related": [
+      "internet-aol-1991",
+      "programming-javascript-1995",
+      "windows-ie-1996"
+    ],
+    "keywords": [
+      "netscape",
+      "navigator",
+      "web browser",
+      "world wide web",
+      "marc andreessen",
+      "dot-com"
+    ]
+  },
+  {
+    "id": "internet-aol-1991",
+    "title": "America Online (AOL)",
+    "category": "internet",
+    "year": 1991,
+    "manufacturer": "America Online, Inc.",
+    "summary": "The ubiquitous online service provider famous for dial-up internet access, direct-mail CD-ROMs, chat rooms, Instant Messenger, and 'You've Got Mail!'.",
+    "facts": [
+      "Distributed millions of free trial CD-ROMs in magazines, mailboxes, and cereal boxes.",
+      "Used proprietary Keyword navigation system (e.g. AOL Keyword: MOVIES).",
+      "Elwood Edwards provided the iconic voice for 'You've Got Mail'."
+    ],
+    "related": [
+      "internet-netscape-1994",
+      "internet-icq-1996"
+    ],
+    "keywords": [
+      "aol",
+      "america online",
+      "dial-up",
+      "youve got mail",
+      "aim",
+      "chatrooms",
+      "keywords"
+    ]
+  },
+  {
+    "id": "internet-geocities-1994",
+    "title": "GeoCities Web Hosting",
+    "category": "internet",
+    "year": 1994,
+    "manufacturer": "GeoCities / Beverly Hills Internet",
+    "summary": "Popular web hosting service that organized personal websites into thematic neighborhoods like SiliconValley, Hollywood, and Area51.",
+    "facts": [
+      "Featured custom HTML, animated GIF banners, under construction icons, and MIDI background music.",
+      "Acquired by Yahoo! in 1999 for $3.57 billion at the height of the dot-com bubble.",
+      "Pioneered user-generated web content and personal homepage culture."
+    ],
+    "related": [
+      "internet-netscape-1994",
+      "internet-altavista-1995"
+    ],
+    "keywords": [
+      "geocities",
+      "web hosting",
+      "neighborhoods",
+      "animated gif",
+      "under construction",
+      "midi"
+    ]
+  },
+  {
+    "id": "internet-altavista-1995",
+    "title": "AltaVista Search Engine",
+    "category": "internet",
+    "year": 1995,
+    "manufacturer": "Digital Equipment Corporation (DEC)",
+    "summary": "Pioneering web search engine known for fast full-text web crawler indexing and boolean search operators.",
+    "facts": [
+      "Developed by researchers at DEC Network Systems Laboratory in Palo Alto.",
+      "Indexed over 20 million web pages in 1995 using powerful 64-bit Alpha processors.",
+      "Introduced Babel Fish multilingual automatic translation service."
+    ],
+    "related": [
+      "internet-netscape-1994",
+      "internet-geocities-1994"
+    ],
+    "keywords": [
+      "altavista",
+      "search engine",
+      "dec",
+      "web crawler",
+      "babel fish",
+      "search"
+    ]
+  },
+  {
+    "id": "internet-icq-1996",
+    "title": "ICQ Instant Messenger",
+    "category": "internet",
+    "year": 1996,
+    "manufacturer": "Mirabilis",
+    "summary": "The first major standalone real-time internet instant messaging service, famous for UIN numbers and its iconic 'Uh-oh!' notification sound.",
+    "facts": [
+      "Created by Israeli company Mirabilis founded by Yair Goldfinger, Arik Vardi, Sefi Vigiser, and Amnon Amir.",
+      "Assigned numeric User Identification Numbers (UINs) to all subscribers.",
+      "Acquired by AOL in 1998 for $407 million."
+    ],
+    "related": [
+      "internet-aol-1991",
+      "internet-netscape-1994"
+    ],
+    "keywords": [
+      "icq",
+      "instant messaging",
+      "uin",
+      "uh-oh",
+      "mirabilis",
+      "chat"
+    ]
+  }
+]

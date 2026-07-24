@@ -1,0 +1,128 @@
+[
+  {
+    "id": "tech-palmpilot-1997",
+    "title": "PalmPilot Personal Digital Assistant",
+    "category": "technology",
+    "year": 1997,
+    "manufacturer": "Palm Inc. / 3Com",
+    "summary": "The groundbreaking handheld personal digital assistant that popularized mobile contact management, calendars, and Graffiti handwriting recognition.",
+    "facts": [
+      "Introduced the Palm OS and Graffiti gesture-based text input system.",
+      "Shipped with 512KB to 1MB of RAM and ran on AAA batteries for weeks.",
+      "Synchronized seamlessly with desktop PCs via a HotSync cradle."
+    ],
+    "related": [
+      "tech-zip-drive-1994",
+      "hardware-pentium-1993"
+    ],
+    "keywords": [
+      "palmpilot",
+      "pda",
+      "palm os",
+      "graffiti",
+      "hotsync",
+      "handheld"
+    ]
+  },
+  {
+    "id": "tech-zip-drive-1994",
+    "title": "Iomega Zip Drive",
+    "category": "technology",
+    "year": 1994,
+    "manufacturer": "Iomega",
+    "summary": "A super-floppy disk drive system offering 100MB of removable storage, revolutionizing data backup and file transfer before writable CDs became affordable.",
+    "facts": [
+      "Replaced standard 1.44MB floppy disks for large files and backups.",
+      "Connected via parallel port, SCSI, or later USB.",
+      "Famous for the dreaded 'Click of Death' failure mode in some drive batches."
+    ],
+    "related": [
+      "tech-palmpilot-1997",
+      "hardware-sound-blaster-16-1992"
+    ],
+    "keywords": [
+      "zip drive",
+      "iomega",
+      "100mb disk",
+      "super floppy",
+      "click of death",
+      "storage"
+    ]
+  },
+  {
+    "id": "tech-sony-discman-1999",
+    "title": "Sony Discman (G-Protection Series)",
+    "category": "technology",
+    "year": 1999,
+    "manufacturer": "Sony",
+    "summary": "Portable CD player featuring advanced G-Protection electronic anti-skip memory, allowing uninterrupted playback during movement.",
+    "facts": [
+      "Solves the notorious playback skip issue of earlier portable CD players.",
+      "Used dual optical pickup buffering technology.",
+      "Helped CDs dominate portable music listenership in the late 90s."
+    ],
+    "related": [
+      "music-nirvana-nevermind-1991",
+      "music-prodigy-fat-of-land-1997"
+    ],
+    "keywords": [
+      "discman",
+      "sony",
+      "cd player",
+      "anti skip",
+      "g protection",
+      "portable audio"
+    ]
+  },
+  {
+    "id": "tech-dvd-format-1996",
+    "title": "DVD Format & Commercial Launch",
+    "category": "technology",
+    "year": 1996,
+    "manufacturer": "DVD Forum (Toshiba, Sony, Panasonic, Philips)",
+    "summary": "Digital Versatile Disc optical media format offering pristine MPEG-2 digital video, 5.1 surround audio, and interactive menus, superseding VHS.",
+    "facts": [
+      "First commercially launched in Japan in November 1996 and North America in early 1997.",
+      "Offered 4.7 GB capacity on single-layer discs compared to 700 MB on CDs.",
+      "Featured regional encoding and Dolby Digital AC-3 audio tracks."
+    ],
+    "related": [
+      "movies-matrix-1999",
+      "movies-jurassic-park-1993"
+    ],
+    "keywords": [
+      "dvd",
+      "optical disc",
+      "mpeg-2",
+      "dolby digital",
+      "vhs replacement",
+      "home theater"
+    ]
+  },
+  {
+    "id": "tech-apple-imac-g3-1998",
+    "title": "Apple iMac G3",
+    "category": "technology",
+    "year": 1998,
+    "manufacturer": "Apple Computer",
+    "summary": "Translucent Bondi Blue all-in-one desktop computer designed by Jony Ive that revitalized Apple and eliminated legacy floppy drives in favor of USB and Ethernet.",
+    "facts": [
+      "First consumer Mac featuring USB ports as standard equipment.",
+      "Ditched the 3.5-inch floppy drive, accelerating the move toward web downloads and CDs.",
+      "Powered by PowerPC 750 (G3) processor at 233 MHz."
+    ],
+    "related": [
+      "internet-netscape-1994",
+      "hardware-pentium2-1997"
+    ],
+    "keywords": [
+      "imac",
+      "g3",
+      "apple",
+      "bondi blue",
+      "jony ive",
+      "usb",
+      "steve jobs"
+    ]
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "id": "consoles-snes-1990",
+    "title": "Super Nintendo Entertainment System (SNES)",
+    "category": "consoles",
+    "year": 1990,
+    "manufacturer": "Nintendo",
+    "summary": "16-bit home video game console famous for Mode 7 pseudo-3D scaling, SPC700 audio chip, and legendary 2D sprite graphics masterpieces.",
+    "facts": [
+      "Released in Japan as Super Famicom in November 1990 and North America in August 1991.",
+      "Mode 7 graphics hardware mode enabled rotation and scaling of background layers.",
+      "Included games enhanced with coprocessor expansion chips like the Super FX chip in Star Fox."
+    ],
+    "related": [
+      "consoles-n64-1996",
+      "games-zelda-oot-1998",
+      "brands-tamagotchi-1996"
+    ],
+    "keywords": [
+      "snes",
+      "super nintendo",
+      "super famicom",
+      "mode 7",
+      "spc700",
+      "16-bit",
+      "nintendo"
+    ]
+  },
+  {
+    "id": "consoles-ps1-1994",
+    "title": "Sony PlayStation (PS1)",
+    "category": "consoles",
+    "year": 1994,
+    "manufacturer": "Sony Computer Entertainment",
+    "summary": "32-bit CD-ROM home console designed by Ken Kutaragi that popularized 3D gaming, optical disc media, and memory cards for saving progress.",
+    "facts": [
+      "Originally conceived as a CD-ROM add-on for the Super Nintendo before Sony developed it independently.",
+      "Became the first home console to ship over 100 million units worldwide.",
+      "Introduced DualAnalog and DualShock controller with twin analog thumbsticks and haptic vibration."
+    ],
+    "related": [
+      "consoles-snes-1990",
+      "consoles-n64-1996",
+      "tech-dvd-format-1996"
+    ],
+    "keywords": [
+      "playstation",
+      "ps1",
+      "sony",
+      "ken kutaragi",
+      "dualshock",
+      "cd-rom console",
+      "32-bit"
+    ]
+  },
+  {
+    "id": "consoles-n64-1996",
+    "title": "Nintendo 64 (N64)",
+    "category": "consoles",
+    "year": 1996,
+    "manufacturer": "Nintendo",
+    "summary": "64-bit home video game console powered by NEC VR4300 CPU and Silicon Graphics (SGI) RCP graphics chip, featuring four controller ports and analog stick.",
+    "facts": [
+      "Launched alongside Super Mario 64, establishing standard 3D platforming controls.",
+      "Used ROM cartridge format providing fast loading times despite higher media manufacturing costs.",
+      "Standardized 4-player split-screen local multiplayer couch gaming."
+    ],
+    "related": [
+      "games-zelda-oot-1998",
+      "consoles-snes-1990",
+      "consoles-ps1-1994"
+    ],
+    "keywords": [
+      "nintendo 64",
+      "n64",
+      "sgi",
+      "vr4300",
+      "analog stick",
+      "cartridge",
+      "super mario 64"
+    ]
+  },
+  {
+    "id": "consoles-sega-saturn-1994",
+    "title": "Sega Saturn",
+    "category": "consoles",
+    "year": 1994,
+    "manufacturer": "Sega",
+    "summary": "32-bit dual-CPU CD-ROM home video game console renowned for superb 2D arcade ports and quad-based 3D graphics architecture.",
+    "facts": [
+      "Surprise early North American launch at E3 1995 for $399.",
+      "Featured dual Hitachi SH-2 32-bit RISC processors.",
+      "Acclaimed in Japan for 2D arcade games and fighting game ports with RAM expansion cartridges."
+    ],
+    "related": [
+      "consoles-dreamcast-1998",
+      "consoles-ps1-1994"
+    ],
+    "keywords": [
+      "sega saturn",
+      "saturn",
+      "sega",
+      "hitachi sh-2",
+      "arcade ports",
+      "32-bit"
+    ]
+  },
+  {
+    "id": "consoles-dreamcast-1998",
+    "title": "Sega Dreamcast",
+    "category": "consoles",
+    "year": 1998,
+    "manufacturer": "Sega",
+    "summary": "128-bit sixth-generation console featuring PowerVR2 graphics, GD-ROM optical discs, and built-in 56k dial-up modem for online gaming.",
+    "facts": [
+      "Launched in Japan in Nov 1998 and US on the famous 9/9/99 date for $199.",
+      "Introduced the VMU (Visual Memory Unit) memory card with built-in LCD screen.",
+      "First console to offer built-in internet modem and web browser out of the box."
+    ],
+    "related": [
+      "consoles-sega-saturn-1994",
+      "internet-netscape-1994",
+      "consoles-ps1-1994"
+    ],
+    "keywords": [
+      "dreamcast",
+      "sega",
+      "powervr",
+      "gd-rom",
+      "vmu",
+      "9-9-99",
+      "online console"
+    ]
+  }
+]

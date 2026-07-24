@@ -1,0 +1,134 @@
+[
+  {
+    "id": "windows-31-1992",
+    "title": "Microsoft Windows 3.1",
+    "category": "windows",
+    "year": 1992,
+    "manufacturer": "Microsoft",
+    "summary": "16-bit graphical operating environment running on top of MS-DOS, introducing TrueType fonts, Minesweeper, and Object Linking and Embedding (OLE).",
+    "facts": [
+      "Released in April 1992, selling over 3 million copies in its first two months.",
+      "Introduced TrueType scalable fonts making Windows a viable desktop publishing system.",
+      "Included Solitaire and Minesweeper to teach users drag-and-drop mouse skills."
+    ],
+    "related": [
+      "dos-msdos-622-1994",
+      "windows-95-1995"
+    ],
+    "keywords": [
+      "windows 3.1",
+      "program manager",
+      "truetype",
+      "minesweeper",
+      "ole",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "windows-95-1995",
+    "title": "Microsoft Windows 95",
+    "category": "windows",
+    "year": 1995,
+    "manufacturer": "Microsoft",
+    "summary": "Landmark 32-bit operating system featuring the Start Menu, Taskbar, Windows Explorer, Plug and Play architecture, and long filename support.",
+    "facts": [
+      "Launched on August 24, 1995 with a $300M marketing campaign using the Rolling Stones song 'Start Me Up'.",
+      "Brian Eno composed the iconic 3.25-second Windows 95 startup sound.",
+      "Unified MS-DOS and Windows into a integrated GUI environment."
+    ],
+    "related": [
+      "windows-31-1992",
+      "windows-98-1998",
+      "windows-ie-1996"
+    ],
+    "keywords": [
+      "windows 95",
+      "start menu",
+      "taskbar",
+      "plug and play",
+      "brian eno",
+      "chicago",
+      "win95"
+    ]
+  },
+  {
+    "id": "windows-98-1998",
+    "title": "Microsoft Windows 98",
+    "category": "windows",
+    "year": 1998,
+    "manufacturer": "Microsoft",
+    "summary": "Consumer operating system featuring native USB support, FAT32 file system, Internet Explorer 4 integration, and DirectX 5 graphics acceleration.",
+    "facts": [
+      "Featured the famous Blue Screen of Death (BSOD) demonstration glitch by Bill Gates at Comdex 1998.",
+      "Included Windows Driver Model (WDM) and system maintenance utilities like Disk Defragmenter.",
+      "Second Edition (SE) released in 1999 added Internet Connection Sharing (ICS)."
+    ],
+    "related": [
+      "windows-95-1995",
+      "windows-ie-1996",
+      "hardware-voodoo-1996"
+    ],
+    "keywords": [
+      "windows 98",
+      "win98",
+      "fat32",
+      "usb support",
+      "directx",
+      "bsod",
+      "memphis"
+    ]
+  },
+  {
+    "id": "windows-nt4-1996",
+    "title": "Microsoft Windows NT 4.0",
+    "category": "windows",
+    "year": 1996,
+    "manufacturer": "Microsoft",
+    "summary": "32-bit preemptive multitasking business and server operating system combining NT security kernel with the user interface of Windows 95.",
+    "facts": [
+      "Released for Workstation and Server editions on x86, Alpha, MIPS, and PowerPC platforms.",
+      "Offered robust memory protection and NTFS file system security.",
+      "Core foundation for future consumer NT releases like Windows 2000 and XP."
+    ],
+    "related": [
+      "windows-95-1995",
+      "windows-98-1998"
+    ],
+    "keywords": [
+      "windows nt",
+      "nt 4.0",
+      "ntfs",
+      "server",
+      "workstation",
+      "32-bit",
+      "preemptive"
+    ]
+  },
+  {
+    "id": "windows-ie-1996",
+    "title": "Microsoft Internet Explorer 3.0 & 4.0",
+    "category": "windows",
+    "year": 1996,
+    "manufacturer": "Microsoft",
+    "summary": "Microsoft's web browsers that sparked the 'Browser Wars' against Netscape, featuring Active Desktop, CSS support, and tight OS bundling.",
+    "facts": [
+      "IE 3.0 was released in August 1996 and introduced support for CSS and ActiveX controls.",
+      "IE 4.0 (1997) introduced Active Desktop and deep integration with Windows Explorer.",
+      "Triggered United States v. Microsoft Corp. antitrust litigation."
+    ],
+    "related": [
+      "windows-95-1995",
+      "internet-netscape-1994",
+      "windows-98-1998"
+    ],
+    "keywords": [
+      "internet explorer",
+      "ie3",
+      "ie4",
+      "browser wars",
+      "activex",
+      "active desktop",
+      "antitrust"
+    ]
+  }
+]
