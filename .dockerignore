@@ -1,0 +1,9 @@
+.git
+.github
+target
+mcp-server/target
+demo-website/target
+testing-scenarios/target
+reports
+graphify-out
+.superpowers
