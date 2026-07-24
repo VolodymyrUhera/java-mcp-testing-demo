@@ -36,20 +36,20 @@ public class LinksHandler implements HttpHandler {
                                 and cyber resources on the Internet!
                             </p>
                             
-                            <h4>🔍 Search Engines &amp; Portals</h4>
+                            <h2>🔍 Search Engines &amp; Portals</h2>
                             <ul>
                                 <li><a href="https://archive.org" target="_blank">Internet Archive Wayback Machine</a> - Travel back to the 90s Web!</li>
                                 <li><a href="https://www.geocities.ws" target="_blank">GeoCities Archive</a> - Classic homepages and GIFs.</li>
                             </ul>
                             
-                            <h4>💾 Technology &amp; Standards</h4>
+                            <h2>💾 Technology &amp; Standards</h2>
                             <ul>
                                 <li><a href="https://www.w3.org" target="_blank">W3C (World Wide Web Consortium)</a> - Official HTML &amp; CSS Standards.</li>
                                 <li><a href="https://openjdk.org" target="_blank">OpenJDK Project</a> - Java 21 Open Source JDK.</li>
                                 <li><a href="https://slashdot.org" target="_blank">Slashdot</a> - News for Nerds, Stuff that Matters.</li>
                             </ul>
                             
-                            <h4>🎨 Graphics &amp; Retro Art</h4>
+                            <h2>🎨 Graphics &amp; Retro Art</h2>
                             <ul>
                                 <li><a href="https://www.w3.org/History.html" target="_blank">World Wide Web History</a> - Tim Berners-Lee's original web history.</li>
                                 <li><a href="https://www.w3.org/Style/CSS/specs" target="_blank">CSS Specifications</a> - Cascading Style Sheets standard.</li>

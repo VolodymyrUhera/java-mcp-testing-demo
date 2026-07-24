@@ -73,37 +73,31 @@ public class ContactHandler implements HttpHandler {
                         <td class="content">
                             <h1>Electronic Mail Transmission Form</h1>
                             
-                            <h4>Fill out all fields below:</h4>
+                            <h2>Fill out all fields below:</h2>
                             
                             <form action="/contact" method="POST" id="contactForm">
                                 <table border="1" cellpadding="5">
                                     <tr>
-                                        <td>Name:</td>
+                                        <td><label for="username">Name:</label></td>
                                         <td>
-                                            <!-- Intentional Accessibility Defect: Missing <label> element and id/name mapping -->
-                                            <input type="text" name="username" placeholder="Your Cyber Alias">
+                                            <input type="text" id="username" name="username" placeholder="Your Cyber Alias">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Email:</td>
+                                        <td><label for="email">Email:</label></td>
                                         <td>
-                                            <!-- Intentional Accessibility Defect: Missing <label> element -->
-                                            <input type="text" name="email" placeholder="alias@provider.com">
+                                            <input type="text" id="email" name="email" placeholder="alias@provider.com">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Comments:</td>
+                                        <td><label for="comments">Comments:</label></td>
                                         <td>
-                                            <!-- Intentional Accessibility Defect: Missing <label> element -->
-                                            <textarea name="comments" rows="4" cols="30"></textarea>
+                                            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" align="center">
-                                            <!-- Intentional UX Defect: Extremely tiny submit button target (15px) -->
-                                            <input type="submit" id="submitBtn" value="Send E-Mail" class="tiny-submit-btn">
-                                            <br>
-                                            <span style="font-size:8px;">(Click tiny button above to submit)</span>
+                                            <input type="submit" id="submitBtn" value="Send E-Mail" class="submit-btn">
                                         </td>
                                     </tr>
                                 </table>

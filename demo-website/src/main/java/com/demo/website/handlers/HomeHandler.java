@@ -35,8 +35,8 @@ public class HomeHandler implements HttpHandler {
                             <!-- Heading Hierarchy: H1 -->
                             <h1>Welcome to CyberSpace 1999!</h1>
                             
-                            <!-- Intentional Accessibility Defect: Skipped Heading Level (H1 directly to H4) -->
-                            <h4>Latest News &amp; Updates (Updated July 1999)</h4>
+                            <!-- Heading Hierarchy: H1 -> H2 -->
+                            <h2>Latest News &amp; Updates (Updated July 1999)</h2>
                             
                             <p>
                                 Thank you for visiting my personal corner of the World Wide Web! This site is currently 
@@ -48,7 +48,7 @@ public class HomeHandler implements HttpHandler {
                                 <img src="/static/images/under_construction.svg" width="250" height="40" alt="Under Construction Banner">
                             </center>
                             
-                            <h4>Featured Highlights</h4>
+                            <h2>Featured Highlights</h2>
                             <p>
                                 Check out our awesome guestbook or send us an electronic mail via our form!
                             </p>
@@ -58,9 +58,8 @@ public class HomeHandler implements HttpHandler {
                                 🏆 WINNER OF THE 1999 GOLDEN WEB AWARD 🏆
                             </div>
                             
-                            <!-- Intentional UX Defect: Tiny click target -->
                             <p>
-                                Need more info? <a href="/about" class="tiny-link">click here for tiny link</a>
+                                Need more info? <a href="/about" class="info-link">Click here for more information</a>
                             </p>
                         </td>
                     </tr>
