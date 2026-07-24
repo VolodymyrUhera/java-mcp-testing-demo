@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="folder-title folder-desc">
+  <title id="folder-title">Windows 98 Yellow Folder Icon</title>
+  <desc id="folder-desc">Classic 24x24 pixel Windows 98 directory folder icon with yellow body, brown outline, and 3D shadow.</desc>
+  
+  <!-- Folder Backing Shadow -->
+  <polygon points="3,21 22,21 22,7 10,7 8,5 3,5" fill="#403000" opacity="0.3"/>
+  
+  <!-- Folder Tab (Back Left Top) -->
+  <polygon points="2,4 9,4 11,6 2,6" fill="#ffd033" stroke="#806000" stroke-width="1"/>
+  
+  <!-- Folder Back Interior Paper Preview (White outline inside folder) -->
+  <rect x="4" y="6" width="14" height="10" fill="#ffffff" stroke="#c0c0c0" stroke-width="1"/>
+  <line x1="6" y1="9" x2="14" y2="9" stroke="#000080" stroke-width="1"/>
+  <line x1="6" y1="12" x2="16" y2="12" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Folder Front Flap (Main Body) -->
+  <polygon points="1,8 22,8 21,20 1,20" fill="#ffe066"/>
+  
+  <!-- Front Flap Outline & Highlights -->
+  <!-- Top & Left Highlight -->
+  <line x1="1" y1="8" x2="22" y2="8" stroke="#fff5b8" stroke-width="1"/>
+  <line x1="1" y1="8" x2="1" y2="20" stroke="#fff5b8" stroke-width="1"/>
+  
+  <!-- Bottom & Right Shadow Outline -->
+  <line x1="22" y1="8" x2="21" y2="20" stroke="#806000" stroke-width="1"/>
+  <line x1="1" y1="20" x2="21" y2="20" stroke="#806000" stroke-width="1"/>
+  
+  <!-- Folder Front Bevel Crease -->
+  <polygon points="2,9 21,9 20,19 2,19" fill="none" stroke="#ffd033" stroke-width="1"/>
+</svg>

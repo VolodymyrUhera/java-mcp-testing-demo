@@ -1,10 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="250" height="120">
-  <rect width="300" height="150" fill="#c0c0c0" stroke="#000080" stroke-width="4"/>
-  <text x="150" y="30" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#000080" text-anchor="middle">CYBERSPACE 1999 TEAM</text>
-  <circle cx="90" cy="70" r="20" fill="#008080"/>
-  <rect x="70" y="90" width="40" height="50" fill="#008080"/>
-  <circle cx="150" cy="65" r="22" fill="#ff00ff"/>
-  <rect x="125" y="87" width="50" height="53" fill="#ff00ff"/>
-  <circle cx="210" cy="70" r="20" fill="#0000ff"/>
-  <rect x="190" y="90" width="40" height="50" fill="#0000ff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 120" width="250" height="120" role="img" aria-labelledby="team-title team-desc">
+  <title id="team-title">90s Cyber Team Photo</title>
+  <desc id="team-desc">Pixel art graphic of three cyber webmasters in 1990s futuristic sunglasses inside a classic Windows 98 window frame with cyber lighting.</desc>
+  <defs>
+    <linearGradient id="winTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000080"/>
+      <stop offset="100%" stop-color="#1084d0"/>
+    </linearGradient>
+    <pattern id="cyberGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#003366" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Win98 Window Outer Frame -->
+  <rect width="250" height="120" fill="#c0c0c0" stroke="#ffffff" stroke-width="2"/>
+  <line x1="249" y1="0" x2="249" y2="120" stroke="#000000" stroke-width="2"/>
+  <line x1="0" y1="119" x2="250" y2="119" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Titlebar -->
+  <rect x="3" y="3" width="244" height="16" fill="url(#winTitleGrad)"/>
+  <text x="8" y="14" font-family="'MS Sans Serif', Tahoma, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">team_photo_1999.bmp</text>
+  
+  <!-- Titlebar Buttons [ _ ] [ X ] -->
+  <rect x="223" y="5" width="10" height="12" fill="#c0c0c0" stroke="#ffffff" stroke-width="1"/>
+  <text x="228" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">_</text>
+  <rect x="235" y="5" width="10" height="12" fill="#c0c0c0" stroke="#ffffff" stroke-width="1"/>
+  <text x="240" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">×</text>
+  
+  <!-- Photo Viewport (Inset Border) -->
+  <rect x="5" y="22" width="240" height="93" fill="#000022"/>
+  <rect x="5" y="22" width="240" height="93" fill="url(#cyberGrid)"/>
+  <rect x="5" y="22" width="240" height="93" fill="none" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Horizon Laser Grid -->
+  <line x1="5" y1="75" x2="245" y2="75" stroke="#ff00ff" stroke-width="1.5"/>
+  <line x1="5" y1="85" x2="245" y2="85" stroke="#ff00ff" stroke-width="1"/>
+  <line x1="5" y1="92" x2="245" y2="92" stroke="#ff00ff" stroke-width="0.5"/>
+  
+  <!-- Cyber Webmasters (3 Avatars) -->
+  <!-- Left Avatar (Teal Webmaster) -->
+  <circle cx="55" cy="52" r="14" fill="#008080"/>
+  <!-- Visor -->
+  <rect x="44" y="47" width="22" height="6" fill="#00ffff"/>
+  <rect x="42" y="66" width="26" height="22" rx="4" fill="#008080"/>
+  
+  <!-- Center Avatar (Leader - Magenta VR Headset) -->
+  <circle cx="125" cy="46" r="16" fill="#ff00ff"/>
+  <!-- VR Glasses -->
+  <rect x="111" y="41" width="28" height="8" fill="#ffff00"/>
+  <rect x="113" y="43" width="10" height="4" fill="#000000"/>
+  <rect x="127" y="43" width="10" height="4" fill="#000000"/>
+  <rect x="108" y="62" width="34" height="26" rx="5" fill="#ff00ff"/>
+  
+  <!-- Right Avatar (Blue Cyber Hacker) -->
+  <circle cx="195" cy="52" r="14" fill="#0055ff"/>
+  <!-- Sunglasses -->
+  <polygon points="184,48 193,48 191,54 185,54" fill="#000000"/>
+  <polygon points="197,48 206,48 205,54 199,54" fill="#000000"/>
+  <line x1="193" y1="50" x2="197" y2="50" stroke="#000000" stroke-width="1"/>
+  <rect x="182" y="66" width="26" height="22" rx="4" fill="#0055ff"/>
+  
+  <!-- Cyber Text Overlay -->
+  <text x="125" y="106" font-family="'Impact', 'Comic Sans MS', sans-serif" font-size="12" font-weight="bold" fill="#ffff00" letter-spacing="1.5" text-anchor="middle">★ CYBER CREW '99 ★</text>
 </svg>
