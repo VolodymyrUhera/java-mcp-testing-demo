@@ -6,6 +6,17 @@
         "-jar",
         "/home/voha/Documents/JiraMCP/mcp-server/target/mcp-server-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
       ]
+    },
+    "render": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@niyogi/render-mcp",
+        "start"
+      ],
+      "env": {
+        "RENDER_API_KEY": "${RENDER_API_KEY}"
+      }
     }
   }
 }
