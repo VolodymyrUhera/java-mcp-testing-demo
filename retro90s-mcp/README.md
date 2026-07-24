@@ -1,198 +1,235 @@
 # Retro 90s MCP Server (`retro90s-mcp`) 🕹️⚡
 
-A Model Context Protocol (MCP) server providing a nostalgic and historically accurate knowledge base, personality prompt, resources, and specialized search tools covering the 1990s decade (1990–1999).
+A deterministic, lightweight, framework-free Model Context Protocol (MCP) server providing expert knowledge, historical citations, retro pop-culture data, personality prompts, resources, and 9 specialized tools focused on everything related to the **1990s decade (1990–1999)**.
 
-Built in pure Java 21 using `com.sun.net.httpserver.HttpServer` with Server-Sent Events (SSE) and JSON-RPC 2.0 over HTTP.
+Built in pure Java 21 LTS using standard `com.sun.net.httpserver.HttpServer` with Server-Sent Events (SSE) and JSON-RPC 2.0 over HTTP.
 
 ---
 
-## 🚀 Overview
+## 🌟 Key Features
 
-`retro90s-mcp` connects LLMs to structured historical data and a themed persona from the 1990s. It contains curated datasets across 15 pop-culture, computing, and historical categories, combined with a 90s tech expert persona prompt.
+* **Framework-Free**: Built with pure Java 21 Standard Library (`com.sun.net.httpserver`). Zero heavy frameworks (No Spring, no Netty).
+* **Minimal Dependencies**: Uses only `jackson-databind:2.17.0` for JSON-RPC parsing and `junit-jupiter:5.10.2` for testing.
+* **Deterministic & Offline-First**: 15 offline JSON knowledge bases loaded into indexed memory maps at startup.
+* **Smart Search Fallback**: Automatically queries Wikipedia REST API and DuckDuckGo API via Java 21 `java.net.http.HttpClient` when local confidence is below threshold.
+* **Authentic 90s Persona**: Includes "Cyber-Steve" personality prompt system (`personality.md`) for energetic, nostalgic, yet historically accurate responses.
+* **MCP Protocol Compatible**: Supports full MCP HTTP SSE connection flow, JSON-RPC 2.0 tools, resources, and prompts.
 
 ---
 
 ## 🏛️ Architecture Overview
 
-The server operates completely framework-free using Java 21 Standard Library and Jackson JSON parsing:
-
 ```
-                  +-----------------------------------+
-                  |            MCP Client             |
-                  +-----------------------------------+
-                               |         ^
-                       GET /sse|         | JSON-RPC 2.0 Response
-                               v         | POST /message
-                  +-----------------------------------+
-                  |          Retro90sServer           |
-                  |  (HttpServer on port 8080/PORT)   |
-                  +-----------------------------------+
-                               |                 |
-                               v                 v
-                    +--------------------+  +--------------------+
-                    |    ToolRegistry    |  |  Resource Loader   |
-                    +--------------------+  +--------------------+
-                               |                     |
-                               v                     v
-                    +--------------------+  +--------------------+
-                    |  KnowledgeService  |  |  prompts/          |
-                    | (15 JSON Datasets) |  |  personality.md    |
-                    +--------------------+  +--------------------+
-                               |
-                        fallback search
-                               v
-                    +--------------------+
-                    |   SearchService    |
-                    | (Wikipedia REST /  |
-                    |  DuckDuckGo API)   |
-                    +--------------------+
+                                +-----------------------------------+
+                                |            MCP Client             |
+                                +-----------------------------------+
+                                             |         ^
+                                     GET /sse|         | JSON-RPC 2.0 Response
+                                             v         | POST /message
+                                +-----------------------------------+
+                                |          Retro90sServer           |
+                                |  (HttpServer on port 8080/PORT)   |
+                                +-----------------------------------+
+                                             |                 |
+                                             v                 v
+                                  +--------------------+  +--------------------+
+                                  |    ToolRegistry    |  |  Resource Loader   |
+                                  +--------------------+  +--------------------+
+                                             |                     |
+                                             v                     v
+                                  +--------------------+  +--------------------+
+                                  |  KnowledgeService  |  |  prompts/          |
+                                  | (15 JSON Datasets) |  |  personality.md    |
+                                  +--------------------+  +--------------------+
+                                             |
+                                      fallback search
+                                             v
+                                  +--------------------+
+                                  |   SearchService    |
+                                  | (Wikipedia REST /  |
+                                  |  DuckDuckGo API)   |
+                                  +--------------------+
 ```
 
-### Core Components
-1. **`Main` (`com.retro90s.mcp.Main`)**: Application entrypoint initializing services, resolving environment configuration (`PORT`), and starting `Retro90sServer`.
-2. **`Retro90sServer` (`com.retro90s.mcp.Retro90sServer`)**: Embedded HTTP SSE server processing `/sse` GET connections and `/message` POST JSON-RPC 2.0 requests.
-3. **`ToolRegistry` (`com.retro90s.mcp.ToolRegistry`)**: Manages tool schemas (`tools/list`) and executes all 9 specialized retro MCP tools (`tools/call`).
-4. **`KnowledgeService` (`com.retro90s.mcp.KnowledgeService`)**: In-memory dataset index supporting multi-tiered search (exact, keyword scoring, Levenshtein fuzzy matching) and pre-filtered resource views.
-5. **`SearchService` (`com.retro90s.mcp.SearchService`)**: Online search provider using Java 21 `HttpClient` querying Wikipedia REST & DuckDuckGo APIs when local confidence is insufficient.
-6. **`ResourceLoader` (`com.retro90s.mcp.ResourceLoader`)**: Classpath reader for 15 JSON knowledge files and `personality.md`.
+### Core Source Code Map (`com.retro90s.mcp`)
+
+| Class | Description |
+|---|---|
+| [`Main.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/Main.java) | Application entrypoint. Resolves `PORT` env variable, initializes services, starts server, and registers JVM shutdown hooks. |
+| [`Retro90sServer.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/Retro90sServer.java) | HTTP server handling `GET /sse` streams and `POST /message` JSON-RPC 2.0 requests (`initialize`, `ping`, `tools/*`, `resources/*`, `prompts/*`). |
+| [`ToolRegistry.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/ToolRegistry.java) | Configures schemas for `tools/list` and executes all 9 retro tools in `tools/call`. |
+| [`KnowledgeService.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/KnowledgeService.java) | In-memory dataset index supporting multi-tiered search (exact title, keyword scoring, Levenshtein fuzzy match) and pre-filtered resource views. |
+| [`SearchService.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/SearchService.java) | Fallback web search provider querying Wikipedia REST & DuckDuckGo APIs using Java 21 `HttpClient`. |
+| [`ResourceLoader.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/ResourceLoader.java) | Classpath loader for 15 JSON datasets and `personality.md`. |
+| [`KnowledgeItem.java`](file:///home/voha/Documents/JiraMCP/retro90s-mcp/src/main/java/com/retro90s/mcp/KnowledgeItem.java) | Java 21 `record` model (`id`, `title`, `category`, `year`, `manufacturer`, `summary`, `facts`, `related`, `keywords`). |
 
 ---
 
 ## 📡 HTTP SSE & JSON-RPC Connection Details
 
-### 1. Establish SSE Connection
+### 1. Establish SSE Connection (`GET /sse`)
 - **Endpoint**: `GET /sse`
-- **Headers**:
-  - `Accept: text/event-stream`
-- **Behavior**: Emits an initial `endpoint` SSE event pointing to the session-specific `/message` POST target URI:
-  ```
+- **Headers**: `Accept: text/event-stream`
+- **Behavior**: Emits initial `endpoint` SSE event pointing to the session `/message` POST target:
+  ```http
+  HTTP/1.1 200 OK
+  Content-Type: text/event-stream; charset=UTF-8
+
   event: endpoint
   data: /message?sessionId=123e4567-e89b-12d3-a456-426614174000
   ```
 
-### 2. Send JSON-RPC Requests
-- **Endpoint**: `POST /message` (or `POST /message?sessionId=<uuid>`)
-- **Headers**:
-  - `Content-Type: application/json`
-- **Supported Methods**:
-  - `initialize`: Handshake returning protocol version (`2024-11-05`), capabilities, and server info.
-  - `ping`: Liveness check.
-  - `tools/list`: Returns list of all 9 retro MCP tool definitions.
-  - `tools/call`: Executes a specific tool with arguments.
-  - `resources/list`: Returns available resource URIs (`retro90s://timeline`, `retro90s://operating-systems`, `retro90s://consoles`, `retro90s://programming`, `retro90s://internet`).
-  - `resources/read`: Reads JSON dataset for a given resource URI.
-  - `prompts/list`: Returns prompt definitions (`personality`).
-  - `prompts/get`: Gets prompt content from `personality.md`.
+### 2. Send JSON-RPC Requests (`POST /message`)
+- **Endpoint**: `POST /message?sessionId=<uuid>` (or `POST /message`)
+- **Headers**: `Content-Type: application/json`
+
+#### Handshake (`initialize`)
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "initialize"
+}
+```
+*Response:*
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "protocolVersion": "2024-11-05",
+    "capabilities": {
+      "tools": {},
+      "resources": {},
+      "prompts": {}
+    },
+    "serverInfo": {
+      "name": "retro90s-mcp",
+      "version": "1.0.0"
+    }
+  }
+}
+```
+
+---
+
+## 🛠️ MCP Tools Reference (9 Tools)
+
+### 1. `ask90s`
+General 90s question answering tool.
+* **Input**: `{"question": "What was Windows 95?"}`
+* **Output**:
+  ```json
+  {
+    "answer": "Windows 95 was Microsoft's major consumer OS introducing the Start menu and taskbar...",
+    "category": "Operating Systems",
+    "year": 1995,
+    "confidence": 0.98
+  }
+  ```
+
+### 2. `compare`
+Compare two 90s items, software, hardware, or games.
+* **Input**: `{"left": "Windows 95", "right": "Windows 98"}`
+* **Output**: Detailed comparison across Release, Hardware, Networking, Gaming, Stability, Legacy.
+
+### 3. `recommend`
+Get top 90s recommendations for a category.
+* **Input**: `{"category": "games"}`
+* **Output**: Recommendations (DOOM, Quake, StarCraft, Half-Life, Zelda OOT).
+
+### 4. `explain`
+In-depth technical and historical explanation.
+* **Input**: `{"topic": "Dial-up Internet"}`
+* **Output**: Overview, timeline, interesting facts, related technologies.
+
+### 5. `trivia`
+Get random 90s trivia facts.
+* **Input**: `{}` or `{"category": "hardware"}`
+* **Output**: Obscure 90s facts & trivia.
+
+### 6. `nostalgia`
+Generate a nostalgic 90s activity list.
+* **Input**: `{}` or `{"theme": "bored"}`
+* **Output**: Suggested 90s activities (Winamp, GeoCities, Nirvana, Doom).
+
+### 7. `year`
+Get major events across categories for a year (1990–1999).
+* **Input**: `{"year": 1996}`
+* **Output**: Events in technology, movies, music, games, history.
+
+### 8. `website`
+Explore 90s internet landmarks and search engines.
+* **Input**: `{"name": "Yahoo"}`
+* **Output**: 90s history of Yahoo!, Netscape, GeoCities, AOL, ICQ.
+
+### 9. `hardware`
+Get specifications and legacy for 90s PC hardware.
+* **Input**: `{"component": "Sound Blaster 16"}`
+* **Output**: Specs, release year, manufacturer, popularity, legacy.
 
 ---
 
 ## 📁 Knowledge Categories & Resources
 
 ### 15 Datasets (`src/main/resources/knowledge/*.json`)
-- **`technology.json`**: Handheld PDAs, Zip drives, portable CD audio, DVD formats, translucent iMacs.
-- **`internet.json`**: Web browsers, AOL keywords, GeoCities, AltaVista, ICQ instant messaging.
-- **`windows.json`**: Windows 3.1, Windows 95, Windows 98, Windows NT 4.0, Internet Explorer.
-- **`linux.json`**: Early Linux kernel releases, Slackware, Debian, Red Hat, Tux the Penguin.
-- **`dos.json`**: MS-DOS 6.22, Norton Commander, QBasic, conventional RAM management.
-- **`games.json`**: DOOM, Quake, Half-Life, StarCraft, Zelda OOT.
-- **`consoles.json`**: SNES, Genesis, PlayStation 1, Nintendo 64, Saturn, Dreamcast.
-- **`programming.json`**: Java, JavaScript, Python 1.0, Delphi, Visual Basic, Perl, PHP.
-- **`hardware.json`**: 3dfx Voodoo graphics cards, Intel Pentium CPUs, Sound Blaster 16.
-- **`movies.json`**: Jurassic Park, The Matrix, Pulp Fiction, Titanic, Toy Story.
-- **`music.json`**: Grunge rock, alternative, big beat rave, East Coast hip-hop, 90s pop.
-- **`television.json`**: The X-Files, Friends, Seinfeld, Twin Peaks, Pokémon.
-- **`fashion.json`**: Grunge flannels, JNCO jeans, neon windbreakers, platforms, snapbacks.
-- **`history.json`**: Fall of Soviet Union, German reunification, Hubble Telescope, Y2K panic.
-- **`brands.json`**: Tamagotchi, Beanie Babies, Blockbuster Video, Nike Air, Game Boy.
+1. **`technology.json`**: PalmPilot, Zip Drives, DVD-Video, Discman, iMac G3.
+2. **`internet.json`**: Dial-up Internet, Netscape Navigator, GeoCities, AOL, ICQ.
+3. **`windows.json`**: Windows 3.1, Windows 95, Windows 98, Windows NT 4.0.
+4. **`linux.json`**: Linux Kernel 1.0, Slackware, Debian, Red Hat Linux, Tux.
+5. **`dos.json`**: MS-DOS 6.22, Norton Commander, QBasic 1.1, Config.sys & Autoexec.bat.
+6. **`games.json`**: DOOM, Quake, Half-Life, StarCraft, Zelda Ocarina of Time.
+7. **`consoles.json`**: Super Nintendo, Sega Genesis, PlayStation, Nintendo 64, Dreamcast.
+8. **`programming.json`**: Java, JavaScript, Python 1.0, Delphi, Visual Basic, Perl, PHP.
+9. **`hardware.json`**: 3dfx Voodoo Graphics, Intel Pentium CPU, Sound Blaster 16.
+10. **`movies.json`**: Jurassic Park, The Matrix, Pulp Fiction, Titanic, Toy Story.
+11. **`music.json`**: Nirvana, Daft Punk, The Notorious B.I.G., Pearl Jam, Prodigy.
+12. **`television.json`**: The X-Files, Friends, Seinfeld, Twin Peaks, Pokémon.
+13. **`fashion.json`**: Flannel Shirts, JNCO Jeans, Neon Windbreakers, Platform Shoes.
+14. **`history.json`**: Fall of Berlin Wall, German Reunification, Hubble Telescope, Y2K Bug.
+15. **`brands.json`**: Tamagotchi, Beanie Babies, Blockbuster Video, Nike Air Max 90.
 
-### Resource URIs
-- `retro90s://timeline`: Chronological index of 1990s technology, software, hardware, and culture events.
-- `retro90s://operating-systems`: Index of 90s OS releases (Windows, Linux, DOS).
-- `retro90s://consoles`: Index of 90s video game console hardware.
-- `retro90s://programming`: Index of 90s programming languages and development tools.
-- `retro90s://internet`: Index of early web portals, dot-com sites, and internet history.
-
----
-
-## 🛠️ MCP Tools
-
-| Tool Name | Description | Inputs |
-|---|---|---|
-| **`ask90s`** | Ask Cyber-Steve any question about 90s technology, pop culture, or historical events. | `question` (string, required) |
-| **`compare`** | Compare two 90s items, software, hardware, or pop culture phenomena. | `left` (string, required), `right` (string, required) |
-| **`recommend`** | Get top 90s recommendations for a given category or random picks. | `category` (string, optional) |
-| **`explain`** | In-depth historical and technical explanation of a 90s concept, technology, or event. | `topic` (string, required) |
-| **`trivia`** | Get random 90s trivia question or obscure historical facts. | `category` (string, optional) |
-| **`nostalgia`** | Generate a nostalgic 90s memory trip with retro tech, culture, and Cyber-Steve commentary. | `theme` (string, optional) |
-| **`year`** | Get a comprehensive breakdown of major 90s releases and events for a year (1990–1999). | `year` (integer, required) |
-| **`website`** | Explore 90s internet landmarks, early web browsers, search engines, and dot-com sites. | `name` (string, required) |
-| **`hardware`** | Get detailed technical specs and history for 90s hardware, CPUs, GPUs, and peripherals. | `component` (string, required) |
+### 5 MCP Resource URIs
+- `retro90s://timeline`: Chronological index of 1990–1999 events.
+- `retro90s://operating-systems`: Index of 90s operating systems.
+- `retro90s://consoles`: Index of 90s game consoles.
+- `retro90s://programming`: Index of 90s programming languages.
+- `retro90s://internet`: Index of 90s internet history.
 
 ---
 
-## 💻 Build & Running Instructions
+## 💻 Build & Run Instructions
 
-### Requirements
-- **Java 21+** (JDK 21 LTS)
-- **Maven 3.8+**
-
-### Compile & Package
 ```bash
+# Compile and run unit & integration tests (33 tests)
+mvn clean test -f retro90s-mcp/pom.xml
+
+# Package executable JAR
 mvn clean package -f retro90s-mcp/pom.xml
-```
 
-### Run Server
-```bash
-# Run using java -jar
+# Run server on port 8080
 java -jar retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT.jar
 
 # Or run on custom port
-PORT=9090 java -cp retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT.jar com.retro90s.mcp.Main
+PORT=9090 java -jar retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT.jar
 ```
 
 ---
 
 ## 🧪 `curl` Request Examples
 
-### 1. Connect to SSE Stream
+### Connect SSE
 ```bash
 curl -N http://localhost:8080/sse
 ```
-*Output:*
-```
-event: endpoint
-data: /message?sessionId=4e8b39c0-9d41-4b74-a6bf-8016d9ad22e1
-```
 
-### 2. Protocol Handshake (`initialize`)
+### Call Tool `ask90s`
 ```bash
 curl -X POST http://localhost:8080/message \
   -H "Content-Type: application/json" \
   -d '{
     "jsonrpc": "2.0",
     "id": 1,
-    "method": "initialize"
-  }'
-```
-
-### 3. List Available Tools (`tools/list`)
-```bash
-curl -X POST http://localhost:8080/message \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 2,
-    "method": "tools/list"
-  }'
-```
-
-### 4. Call `ask90s` Tool (`tools/call`)
-```bash
-curl -X POST http://localhost:8080/message \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 3,
     "method": "tools/call",
     "params": {
       "name": "ask90s",
@@ -203,41 +240,16 @@ curl -X POST http://localhost:8080/message \
   }'
 ```
 
-### 5. List Resources (`resources/list`)
+### Read Resource `retro90s://timeline`
 ```bash
 curl -X POST http://localhost:8080/message \
   -H "Content-Type: application/json" \
   -d '{
     "jsonrpc": "2.0",
-    "id": 4,
-    "method": "resources/list"
-  }'
-```
-
-### 6. Read Timeline Resource (`resources/read`)
-```bash
-curl -X POST http://localhost:8080/message \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 5,
+    "id": 2,
     "method": "resources/read",
     "params": {
       "uri": "retro90s://timeline"
-    }
-  }'
-```
-
-### 7. Get Personality Prompt (`prompts/get`)
-```bash
-curl -X POST http://localhost:8080/message \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 6,
-    "method": "prompts/get",
-    "params": {
-      "name": "personality"
     }
   }'
 ```
