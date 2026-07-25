@@ -11,7 +11,7 @@ RUN mvn clean package -DskipTests
 # Stage 2: Minimal JRE 21 Runtime image
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
-COPY --from=builder /app/demo-website/target/demo-website-1.0.0-SNAPSHOT.jar /app/demo-website.jar
+COPY --from=builder /app/demo-website/target/demo-website-1.0.0-SNAPSHOT-jar-with-dependencies.jar /app/demo-website.jar
 COPY --from=builder /app/retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT-jar-with-dependencies.jar /app/retro90s-mcp.jar
 COPY start.sh /app/start.sh
 RUN chmod +x /app/start.sh
