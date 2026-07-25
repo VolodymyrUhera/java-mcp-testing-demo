@@ -8,3 +8,5 @@ services:
     envVars:
       - key: PORT
         value: 8080
+      - key: RETRO90S_MCP_URL
+        value: http://localhost:8081/message

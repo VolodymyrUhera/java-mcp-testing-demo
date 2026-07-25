@@ -4,6 +4,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY demo-website demo-website
 COPY mcp-server mcp-server
+COPY retro90s-mcp retro90s-mcp
 COPY testing-scenarios testing-scenarios
 RUN mvn clean package -DskipTests
 
@@ -11,8 +12,12 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=builder /app/demo-website/target/demo-website-1.0.0-SNAPSHOT.jar /app/demo-website.jar
+COPY --from=builder /app/retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT-jar-with-dependencies.jar /app/retro90s-mcp.jar
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
 
 ENV PORT=8080
-EXPOSE 8080
+ENV RETRO90S_MCP_URL=http://localhost:8081/message
+EXPOSE 8080 8081
 
-ENTRYPOINT ["java", "-jar", "demo-website.jar"]
+ENTRYPOINT ["/app/start.sh"]

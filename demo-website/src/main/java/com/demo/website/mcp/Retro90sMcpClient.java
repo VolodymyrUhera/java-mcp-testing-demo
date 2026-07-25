@@ -18,8 +18,8 @@ import java.util.logging.Logger;
  */
 public class Retro90sMcpClient {
     private static final Logger LOGGER = Logger.getLogger(Retro90sMcpClient.class.getName());
-    private static final String DEFAULT_PRIMARY_URL = "http://localhost:8080/message";
-    private static final String DEFAULT_FALLBACK_URL = "http://localhost:8081/message";
+    private static final String DEFAULT_PRIMARY_URL = "http://localhost:8081/message";
+    private static final String DEFAULT_FALLBACK_URL = "http://localhost:8080/message";
 
     private final String primaryUrl;
     private final String fallbackUrl;
