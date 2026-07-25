@@ -28,7 +28,7 @@ public class Retro90sMcpClientTest {
     public void testClientInitializationDefaults() {
         Retro90sMcpClient client = new Retro90sMcpClient();
         assertNotNull(client.getPrimaryUrl());
-        assertEquals("http://localhost:8081/message", client.getFallbackUrl());
+        assertEquals("http://localhost:8080/message", client.getFallbackUrl());
     }
 
     @Test

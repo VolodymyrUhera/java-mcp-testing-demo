@@ -17,6 +17,21 @@
       "env": {
         "RENDER_API_KEY": "${RENDER_API_KEY}"
       }
+    },
+    "retro90s-remote": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-remote",
+        "https://java-mcp-testing-demo.onrender.com/sse"
+      ]
+    },
+    "retro90s-local": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/home/voha/Documents/JiraMCP/retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+      ]
     }
   }
 }

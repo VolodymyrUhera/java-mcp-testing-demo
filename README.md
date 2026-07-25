@@ -169,6 +169,141 @@ mvn exec:java -Dexec.mainClass="com.demo.testing.agent.TestRunnerAgent" -pl test
 
 ---
 
+## 🔌 Connecting Popular AI Agents & MCP Clients
+
+This project supports seamless integration with top AI coding assistants and agent frameworks via the **Model Context Protocol (MCP)**. You can connect local AI agents directly to both local fat-JAR MCP servers (`retro90s-mcp`, `java-playwright-mcp`) and the live remote server at **`https://java-mcp-testing-demo.onrender.com`**.
+
+### Supported AI Clients Ecosystem
+
+| Client / Agent | Connection Method | Configuration Location | Remote SSE Support |
+|---|---|---|---|
+| **Google Antigravity (`agy` / IDE)** | `.mcp.json` (Stdio & SSE Remote Bridge) | Workspace `.mcp.json` | ✅ via `@modelcontextprotocol/server-remote` |
+| **Claude Code (Anthropic CLI)** | CLI `claude mcp add` / `.mcp.json` | `~/.claude.json` or `.mcp.json` | ✅ via `@modelcontextprotocol/server-remote` |
+| **Cursor IDE** | Cursor Settings > MCP | `.cursor/mcp.json` | ✅ via `@modelcontextprotocol/server-remote` |
+| **VS Code (Cline / Roo Code / Copilot)** | VS Code Extension Settings | `.vscode/mcp.json` | ✅ via Stdio & SSE |
+| **Custom Local AI Agents (Python/Java)** | Direct REST API / Stdio JSON-RPC 2.0 | `POST /api/chat` or Stdio IPC | ✅ direct HTTP POST / SSE |
+
+---
+
+### 1. Google Antigravity (`agy` CLI & Antigravity IDE)
+
+Antigravity automatically loads the project's root [.mcp.json](file:///home/voha/Documents/JiraMCP/.mcp.json).
+
+```json
+{
+  "mcpServers": {
+    "retro90s-remote": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-remote",
+        "https://java-mcp-testing-demo.onrender.com/sse"
+      ]
+    },
+    "retro90s-local": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/absolute/path/to/JiraMCP/retro90s-mcp/target/retro90s-mcp-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+      ]
+    },
+    "java-playwright-mcp": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/absolute/path/to/JiraMCP/mcp-server/target/mcp-server-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+      ]
+    }
+  }
+}
+```
+
+---
+
+### 2. Claude Code (Anthropic CLI)
+
+Register remote or local MCP servers using `claude mcp add`:
+
+* **Connect to Live Cloud MCP Server (Render)**:
+  ```bash
+  claude mcp add retro90s-remote -- npx -y @modelcontextprotocol/server-remote https://java-mcp-testing-demo.onrender.com/sse
+  ```
+
+* **Connect to Local Playwright MCP Server**:
+  ```bash
+  claude mcp add java-playwright -- java -jar /absolute/path/to/JiraMCP/mcp-server/target/mcp-server-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  ```
+
+---
+
+### 3. Cursor IDE
+
+1. Open **Cursor Settings** -> **Features** -> **MCP**.
+2. Click **+ Add New MCP Server**.
+3. Set **Type** to `command`.
+4. Enter configuration:
+   * **Name:** `retro90s-remote`
+   * **Command:** `npx -y @modelcontextprotocol/server-remote https://java-mcp-testing-demo.onrender.com/sse`
+
+Or add `.cursor/mcp.json`:
+```json
+{
+  "mcpServers": {
+    "retro90s-remote": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-remote", "https://java-mcp-testing-demo.onrender.com/sse"]
+    }
+  }
+}
+```
+
+---
+
+### 4. VS Code (Cline / Roo Code / GitHub Copilot Agent)
+
+Add to `.vscode/mcp.json` or extension configuration:
+
+```json
+{
+  "mcpServers": {
+    "retro90s-remote": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-remote",
+        "https://java-mcp-testing-demo.onrender.com/sse"
+      ]
+    }
+  }
+}
+```
+
+---
+
+### 5. Custom Local AI Agents & OpenAI Codex / LangChain / Python
+
+Custom local AI agents can interact directly with the 90s Knowledge engine using simple HTTP requests or Stdio JSON-RPC:
+
+#### HTTP REST API Example (`curl` / Python `requests` / Node `fetch`):
+```bash
+curl -X POST https://java-mcp-testing-demo.onrender.com/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Compare Windows 95 and Windows 98"}'
+```
+
+#### Python Agent Code Snippet:
+```python
+import requests
+
+response = requests.post(
+    "https://java-mcp-testing-demo.onrender.com/api/chat",
+    json={"message": "What was the iMac G3?"}
+)
+print(response.json()["reply"])
+```
+
+---
+
 ## 📊 Viewing Test Reports
 
 All test output reports are automatically saved to the `reports/` folder:
