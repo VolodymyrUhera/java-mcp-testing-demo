@@ -1,13 +1,13 @@
 {
   "demo-website/pom.xml": {
-    "mtime": 1784901312.0958042,
-    "ast_hash": "e026855c00646978e525990a97e6e74f",
-    "semantic_hash": "e026855c00646978e525990a97e6e74f"
+    "mtime": 1784940270.5264466,
+    "ast_hash": "27cd49a2991a34b1e509f9e8e4720ba1",
+    "semantic_hash": "27cd49a2991a34b1e509f9e8e4720ba1"
   },
   "demo-website/src/main/java/com/demo/website/DemoWebServer.java": {
-    "mtime": 1784930238.959935,
-    "ast_hash": "f131e17dee11b6dda0c899006edcd749",
-    "semantic_hash": ""
+    "mtime": 1784938167.6815903,
+    "ast_hash": "de392045e8aba715ebb1f26ab402297a",
+    "semantic_hash": "de392045e8aba715ebb1f26ab402297a"
   },
   "demo-website/src/main/java/com/demo/website/handlers/AboutHandler.java": {
     "mtime": 1784928309.4318237,
@@ -67,7 +67,7 @@
   "pom.xml": {
     "mtime": 1784935954.090177,
     "ast_hash": "a379873c87b63d0b014c8f4fe3ea0742",
-    "semantic_hash": ""
+    "semantic_hash": "a379873c87b63d0b014c8f4fe3ea0742"
   },
   "testing-scenarios/pom.xml": {
     "mtime": 1784901315.4028256,
@@ -107,7 +107,7 @@
   "README.md": {
     "mtime": 1784936906.8113992,
     "ast_hash": "8ff58c2ad9211832c1d7d433fb884400",
-    "semantic_hash": ""
+    "semantic_hash": "8ff58c2ad9211832c1d7d433fb884400"
   },
   "docs/architecture.md": {
     "mtime": 1784903984.332736,
@@ -142,12 +142,12 @@
   "reports/performance_report.md": {
     "mtime": 1784928640.1851475,
     "ast_hash": "8d148b13450009c303d7571f648813c5",
-    "semantic_hash": ""
+    "semantic_hash": "8d148b13450009c303d7571f648813c5"
   },
   "reports/ux_journey_report.md": {
     "mtime": 1784928640.1861475,
     "ast_hash": "47f67294fd8e86a482dbb262bbb2bfd1",
-    "semantic_hash": ""
+    "semantic_hash": "47f67294fd8e86a482dbb262bbb2bfd1"
   },
   "demo-website/src/main/resources/static/images/globe.svg": {
     "mtime": 1784928195.828704,
@@ -182,7 +182,7 @@
   ".mcp.json": {
     "mtime": 1784930389.857054,
     "ast_hash": "b8c6f7b9d3d62d1d50db21edd752faf2",
-    "semantic_hash": ""
+    "semantic_hash": "b8c6f7b9d3d62d1d50db21edd752faf2"
   },
   "agents/test_runner.json": {
     "mtime": 1784922973.0227413,
@@ -195,9 +195,9 @@
     "semantic_hash": "1a2cfe999a3ad58589611e18f19122b7"
   },
   "demo-website/src/main/java/com/demo/website/handlers/NavigationHelper.java": {
-    "mtime": 1784928227.903738,
-    "ast_hash": "291c02bd88103955f3d9e557eb6979b8",
-    "semantic_hash": "291c02bd88103955f3d9e557eb6979b8"
+    "mtime": 1784938162.9405854,
+    "ast_hash": "5cb4062bdc5089eb2734b0e179902380",
+    "semantic_hash": "5cb4062bdc5089eb2734b0e179902380"
   },
   "testing-scenarios/src/main/java/com/demo/testing/agent/TestRunnerAgent.java": {
     "mtime": 1784923274.5451312,
@@ -232,7 +232,7 @@
   "docs/deployment.md": {
     "mtime": 1784930455.0231059,
     "ast_hash": "9b97bbe8b9eb8b99b1e99291d17b902c",
-    "semantic_hash": ""
+    "semantic_hash": "9b97bbe8b9eb8b99b1e99291d17b902c"
   },
   "docs/development.md": {
     "mtime": 1784904012.2558067,
@@ -420,178 +420,218 @@
     "semantic_hash": "43de336686600bc328f12d0f419d863b"
   },
   "retro90s-mcp/pom.xml": {
-    "mtime": 1784936368.8000474,
-    "ast_hash": "1fb04a3583bfb3cc5d509f8327bf9084",
-    "semantic_hash": ""
+    "mtime": 1784939572.690861,
+    "ast_hash": "947d4a0ee176cad06b8437f115927601",
+    "semantic_hash": "947d4a0ee176cad06b8437f115927601"
   },
   "retro90s-mcp/src/main/resources/knowledge/brands.json": {
     "mtime": 1784935995.621152,
     "ast_hash": "6aeca3fecd28dfedff3a960ffe0cd770",
-    "semantic_hash": ""
+    "semantic_hash": "6aeca3fecd28dfedff3a960ffe0cd770"
   },
   "retro90s-mcp/src/main/resources/knowledge/consoles.json": {
     "mtime": 1784935975.076164,
     "ast_hash": "d3ee8e3dd03d5dcd968d274094ab808b",
-    "semantic_hash": ""
+    "semantic_hash": "d3ee8e3dd03d5dcd968d274094ab808b"
   },
   "retro90s-mcp/src/main/resources/knowledge/dos.json": {
     "mtime": 1784935969.9991672,
     "ast_hash": "97a92900569b3fa21b3d1f0a098df4ec",
-    "semantic_hash": ""
+    "semantic_hash": "97a92900569b3fa21b3d1f0a098df4ec"
   },
   "retro90s-mcp/src/main/resources/knowledge/fashion.json": {
     "mtime": 1784935990.612155,
     "ast_hash": "84e062ccb1d11f8e2e9ac7517902a10e",
-    "semantic_hash": ""
+    "semantic_hash": "84e062ccb1d11f8e2e9ac7517902a10e"
   },
   "retro90s-mcp/src/main/resources/knowledge/games.json": {
     "mtime": 1784935972.3611658,
     "ast_hash": "d655e99a03a999f3f0642a8b57512438",
-    "semantic_hash": ""
+    "semantic_hash": "d655e99a03a999f3f0642a8b57512438"
   },
   "retro90s-mcp/src/main/resources/knowledge/hardware.json": {
     "mtime": 1784935980.365161,
     "ast_hash": "1558cf0e38e94d61d9a34168043eca99",
-    "semantic_hash": ""
+    "semantic_hash": "1558cf0e38e94d61d9a34168043eca99"
   },
   "retro90s-mcp/src/main/resources/knowledge/history.json": {
     "mtime": 1784935993.0151534,
     "ast_hash": "b9f287fbbcc9e15c525075137be76217",
-    "semantic_hash": ""
+    "semantic_hash": "b9f287fbbcc9e15c525075137be76217"
   },
   "retro90s-mcp/src/main/resources/knowledge/internet.json": {
     "mtime": 1784935961.9181721,
     "ast_hash": "96c870ebc23f27418cdccfb493356171",
-    "semantic_hash": ""
+    "semantic_hash": "96c870ebc23f27418cdccfb493356171"
   },
   "retro90s-mcp/src/main/resources/knowledge/linux.json": {
     "mtime": 1784935967.136169,
     "ast_hash": "41c32f6da9aab4705e963640359aa42f",
-    "semantic_hash": ""
+    "semantic_hash": "41c32f6da9aab4705e963640359aa42f"
   },
   "retro90s-mcp/src/main/resources/knowledge/movies.json": {
     "mtime": 1784935982.7551594,
     "ast_hash": "7d0645cd22c0e9f945840647c3492b7a",
-    "semantic_hash": ""
+    "semantic_hash": "7d0645cd22c0e9f945840647c3492b7a"
   },
   "retro90s-mcp/src/main/resources/knowledge/music.json": {
     "mtime": 1784935985.133158,
     "ast_hash": "755a70bd8efd130beb6ee4a85b3db5da",
-    "semantic_hash": ""
+    "semantic_hash": "755a70bd8efd130beb6ee4a85b3db5da"
   },
   "retro90s-mcp/src/main/resources/knowledge/programming.json": {
     "mtime": 1784935977.5811625,
     "ast_hash": "d83426416655992037600a9900a7368a",
-    "semantic_hash": ""
+    "semantic_hash": "d83426416655992037600a9900a7368a"
   },
   "retro90s-mcp/src/main/resources/knowledge/technology.json": {
     "mtime": 1784935959.4451737,
     "ast_hash": "8fc74b12044324ea1b73cd52ee30c37f",
-    "semantic_hash": ""
+    "semantic_hash": "8fc74b12044324ea1b73cd52ee30c37f"
   },
   "retro90s-mcp/src/main/resources/knowledge/television.json": {
     "mtime": 1784935987.8201566,
     "ast_hash": "561f1140d97dd46f614b733b9bed80f6",
-    "semantic_hash": ""
+    "semantic_hash": "561f1140d97dd46f614b733b9bed80f6"
   },
   "retro90s-mcp/src/main/resources/knowledge/windows.json": {
     "mtime": 1784935964.4961705,
     "ast_hash": "77392c01ac25540af711dd3ed38cef13",
-    "semantic_hash": ""
+    "semantic_hash": "77392c01ac25540af711dd3ed38cef13"
   },
   "docs/superpowers/plans/2026-07-24-render-mcp-integration.md": {
     "mtime": 1784930201.3079054,
     "ast_hash": "e8a54898b2c127447cc2c3b5388b672f",
-    "semantic_hash": ""
+    "semantic_hash": "e8a54898b2c127447cc2c3b5388b672f"
   },
   "docs/superpowers/plans/2026-07-25-retro90s-mcp-implementation.md": {
     "mtime": 1784935845.9044168,
     "ast_hash": "944d41ca2b7dd7de7ae44ab286f25de6",
-    "semantic_hash": ""
+    "semantic_hash": "944d41ca2b7dd7de7ae44ab286f25de6"
   },
   "docs/superpowers/specs/2026-07-24-render-mcp-integration-design.md": {
     "mtime": 1784930142.1168594,
     "ast_hash": "dc0464e5f73e46e77ddf74019c1429ab",
-    "semantic_hash": ""
+    "semantic_hash": "dc0464e5f73e46e77ddf74019c1429ab"
   },
   "docs/superpowers/specs/2026-07-25-retro90s-mcp-design.md": {
     "mtime": 1784935749.741359,
     "ast_hash": "c672518d6658d0cbfd4896d9186b3a86",
-    "semantic_hash": ""
+    "semantic_hash": "c672518d6658d0cbfd4896d9186b3a86"
   },
   "render.yaml": {
-    "mtime": 1784930820.8310022,
-    "ast_hash": "839b28b26b959a0e98ece4357ed31bb9",
-    "semantic_hash": ""
+    "mtime": 1784939630.5349104,
+    "ast_hash": "f403544065ecb5c7dda37f4b1d34ebcd",
+    "semantic_hash": "f403544065ecb5c7dda37f4b1d34ebcd"
   },
   "reports/agent_multiagent_summary.md": {
     "mtime": 1784928643.2141466,
     "ast_hash": "25677252b9193dd41541a4aaeea4ae66",
-    "semantic_hash": ""
+    "semantic_hash": "25677252b9193dd41541a4aaeea4ae66"
   },
   "retro90s-mcp/README.md": {
     "mtime": 1784936903.8693895,
     "ast_hash": "6e8e4ccf100f645b4fd9e20ea85bce6c",
-    "semantic_hash": ""
+    "semantic_hash": "6e8e4ccf100f645b4fd9e20ea85bce6c"
   },
   "retro90s-mcp/src/main/resources/prompts/personality.md": {
     "mtime": 1784935956.5914886,
     "ast_hash": "eb677f106f3b2ce4896629a4f66432b6",
-    "semantic_hash": ""
+    "semantic_hash": "eb677f106f3b2ce4896629a4f66432b6"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/KnowledgeItem.java": {
     "mtime": 1784936352.0352755,
     "ast_hash": "557ac5cb9adefc7e7e9b0913e075b2f9",
-    "semantic_hash": ""
+    "semantic_hash": "557ac5cb9adefc7e7e9b0913e075b2f9"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/KnowledgeService.java": {
     "mtime": 1784936356.2820482,
     "ast_hash": "1d1c074fe5d181665effffcf9c785fd5",
-    "semantic_hash": ""
+    "semantic_hash": "1d1c074fe5d181665effffcf9c785fd5"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/ResourceLoader.java": {
     "mtime": 1784936353.6350484,
     "ast_hash": "9932b57ceee86dc4e9255c450ed00a3b",
-    "semantic_hash": ""
+    "semantic_hash": "9932b57ceee86dc4e9255c450ed00a3b"
   },
   "retro90s-mcp/src/test/java/com/retro90s/mcp/KnowledgeServiceTest.java": {
     "mtime": 1784936359.5665836,
     "ast_hash": "9e84a60c582d045513190883d7c54a03",
-    "semantic_hash": ""
+    "semantic_hash": "9e84a60c582d045513190883d7c54a03"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/SearchService.java": {
     "mtime": 1784936442.6090455,
     "ast_hash": "dad1ba934beedc94808b15c174f4b172",
-    "semantic_hash": ""
+    "semantic_hash": "dad1ba934beedc94808b15c174f4b172"
   },
   "retro90s-mcp/src/test/java/com/retro90s/mcp/SearchServiceTest.java": {
     "mtime": 1784936460.7090456,
     "ast_hash": "164b9b2d0259455418ae953e6e0fd5e5",
-    "semantic_hash": ""
+    "semantic_hash": "164b9b2d0259455418ae953e6e0fd5e5"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/ToolRegistry.java": {
     "mtime": 1784936578.998053,
     "ast_hash": "1273fc7fb06092d98f26c73dbb4c2124",
-    "semantic_hash": ""
+    "semantic_hash": "1273fc7fb06092d98f26c73dbb4c2124"
   },
   "retro90s-mcp/src/test/java/com/retro90s/mcp/ToolRegistryTest.java": {
     "mtime": 1784936581.5250533,
     "ast_hash": "abe968aacef360e047b6824f0ca7ecc5",
-    "semantic_hash": ""
+    "semantic_hash": "abe968aacef360e047b6824f0ca7ecc5"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/Main.java": {
     "mtime": 1784936656.4040627,
     "ast_hash": "8f60291b0390f105b78f7b1e813358f2",
-    "semantic_hash": ""
+    "semantic_hash": "8f60291b0390f105b78f7b1e813358f2"
   },
   "retro90s-mcp/src/main/java/com/retro90s/mcp/Retro90sServer.java": {
     "mtime": 1784936655.1500626,
     "ast_hash": "081eb21804f3d2b5274ea47da5c4b22a",
-    "semantic_hash": ""
+    "semantic_hash": "081eb21804f3d2b5274ea47da5c4b22a"
   },
   "retro90s-mcp/src/test/java/com/retro90s/mcp/Retro90sServerTest.java": {
     "mtime": 1784936667.5400643,
     "ast_hash": "ced800852b0bc2c6f75641d458f7c318",
-    "semantic_hash": ""
+    "semantic_hash": "ced800852b0bc2c6f75641d458f7c318"
+  },
+  "demo-website/src/main/java/com/demo/website/handlers/ChatHandler.java": {
+    "mtime": 1784938460.5578701,
+    "ast_hash": "15390b563d309b6793f8553bd9484d70",
+    "semantic_hash": "15390b563d309b6793f8553bd9484d70"
+  },
+  "demo-website/src/main/java/com/demo/website/mcp/McpChatResponse.java": {
+    "mtime": 1784938260.507682,
+    "ast_hash": "f74765381632a57c24f9a393f5b945ed",
+    "semantic_hash": "f74765381632a57c24f9a393f5b945ed"
+  },
+  "demo-website/src/main/java/com/demo/website/mcp/Retro90sMcpClient.java": {
+    "mtime": 1784938864.2332237,
+    "ast_hash": "2e8448b51664619eb4ea8bf9f357aff3",
+    "semantic_hash": "2e8448b51664619eb4ea8bf9f357aff3"
+  },
+  "demo-website/src/test/java/com/demo/website/handlers/ChatHandlerTest.java": {
+    "mtime": 1784938523.7709274,
+    "ast_hash": "878e81d05a9bd6923bc990f23b912a36",
+    "semantic_hash": "878e81d05a9bd6923bc990f23b912a36"
+  },
+  "demo-website/src/test/java/com/demo/website/mcp/Retro90sMcpClientTest.java": {
+    "mtime": 1784938282.242102,
+    "ast_hash": "78043b92a6e7055d0914799bdc850bcd",
+    "semantic_hash": "78043b92a6e7055d0914799bdc850bcd"
+  },
+  "start.sh": {
+    "mtime": 1784939574.7223375,
+    "ast_hash": "ccdf9b314df69ff54aa9cf2c8a83d4e8",
+    "semantic_hash": "ccdf9b314df69ff54aa9cf2c8a83d4e8"
+  },
+  "docs/superpowers/plans/2026-07-25-chat-page-plan.md": {
+    "mtime": 1784938136.921559,
+    "ast_hash": "c5032be8b44de84627fa5ef4ad83840c",
+    "semantic_hash": "c5032be8b44de84627fa5ef4ad83840c"
+  },
+  "docs/superpowers/specs/2026-07-25-chat-page-design.md": {
+    "mtime": 1784938131.6555536,
+    "ast_hash": "ca7153567b2f31724513657097a6981c",
+    "semantic_hash": "ca7153567b2f31724513657097a6981c"
   }
 }

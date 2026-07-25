@@ -22,6 +22,7 @@ This documentation repository provides architectural overviews, detailed module 
 | [Development Guide](development.md) | Local development setup, Maven build commands, and code conventions. |
 | [Deployment Guide](deployment.md) | Build artifact packaging (`jar-with-dependencies`), execution, and process isolation. |
 | [Testing Framework](testing.md) | Automated functional, performance, accessibility, and UX journey testing details. |
+| [Test Runner Subagent Guide](test_runner_subagent.md) | Architecture, Java class specification, and execution commands for `TestRunnerAgent`. |
 | [Intentional Defects](intentional_defects.md) | Specification of engineered UX and WCAG accessibility flaws for audit testing. |
 | [MCP Protocol Examples](mcp_examples.md) | Complete JSON-RPC request and response payload examples for all 12 MCP tools. |
 | [Glossary](glossary.md) | Project-specific domain terminology, concepts, and technical acronyms. |
