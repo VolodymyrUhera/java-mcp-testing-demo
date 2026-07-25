@@ -7,6 +7,7 @@ public class NavigationHelper {
         boolean isAbout = "/about".equals(activePath);
         boolean isContact = "/contact".equals(activePath);
         boolean isLinks = "/links".equals(activePath);
+        boolean isChat = "/chat".equals(activePath);
 
         String homeClass = "nav-btn" + (isHome ? " active" : "");
         String homeAria = isHome ? " aria-current=\"page\"" : "";
@@ -20,6 +21,9 @@ public class NavigationHelper {
         String linksClass = "nav-btn" + (isLinks ? " active" : "");
         String linksAria = isLinks ? " aria-current=\"page\"" : "";
 
+        String chatClass = "nav-btn" + (isChat ? " active" : "");
+        String chatAria = isChat ? " aria-current=\"page\"" : "";
+
         StringBuilder sb = new StringBuilder();
         sb.append("<td class=\"sidebar\" role=\"region\" aria-label=\"Sidebar Navigation\">\n");
         sb.append("    <nav aria-label=\"Main Navigation\">\n");
@@ -32,6 +36,7 @@ public class NavigationHelper {
         sb.append("        <a href=\"/about\" class=\"").append(aboutClass).append("\"").append(aboutAria).append(">About Us</a>\n");
         sb.append("        <a href=\"/contact\" class=\"").append(contactClass).append("\"").append(contactAria).append(">Secret Portal</a>\n");
         sb.append("        <a href=\"/links\" class=\"").append(linksClass).append("\"").append(linksAria).append(">Cool Links</a>\n");
+        sb.append("        <a href=\"/chat\" class=\"").append(chatClass).append("\"").append(chatAria).append(">Cyber Chat 90s</a>\n");
         sb.append("        <br><br>\n");
         sb.append("        <center>\n");
         sb.append("            <div class=\"counter-box\" aria-label=\"Visitor Counter: 004291\">004291</div>\n");

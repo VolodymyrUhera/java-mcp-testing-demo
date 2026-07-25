@@ -1,6 +1,7 @@
 package com.demo.website;
 
 import com.demo.website.handlers.AboutHandler;
+import com.demo.website.handlers.ChatHandler;
 import com.demo.website.handlers.ContactHandler;
 import com.demo.website.handlers.HomeHandler;
 import com.demo.website.handlers.LinksHandler;
@@ -28,6 +29,8 @@ public class DemoWebServer {
         server.createContext("/about", new AboutHandler());
         server.createContext("/contact", new ContactHandler());
         server.createContext("/links", new LinksHandler());
+        server.createContext("/chat", new ChatHandler());
+        server.createContext("/api/chat", new ChatHandler());
         server.createContext("/static", new StaticAssetHandler());
         
         server.setExecutor(Executors.newVirtualThreadPerTaskExecutor());
